@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css scss/styles.scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

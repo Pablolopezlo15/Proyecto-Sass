@@ -1,0 +1,28 @@
+
+footer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: $background-color_1;
+	padding: 2rem;
+		.rrss{
+			margin: 1rem;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                li{
+                    list-style: none;
+                    
+                    img{
+                        width: 2rem;
+                    }
+                }
+            }
+
+		}
+		
+}

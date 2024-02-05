@@ -1,0 +1,32 @@
+%border_radius{
+    // border: 0.1rem solid $color-primary;
+    border-radius: 0.5rem;
+}
+
+@mixin response ($breakpoint) {
+    @if $breakpoint == xl {
+        @media (max-width: 1200px) { 
+            @content;
+        }
+    }
+    @if $breakpoint == sm {
+        @media (max-width: 56.25em) { 
+            @content; 
+        }
+    }
+    @if $breakpoint == md {
+        @media (max-width: 75em) { 
+            @content; 
+        }
+    }
+    @if $breakpoint == lg {
+        @media (max-width: 112.5em) {
+            @content; 
+        }
+    }
+    @if $breakpoint == xl {
+        @media (max-width: 120em) { 
+            @content; 
+        }
+    }
+}

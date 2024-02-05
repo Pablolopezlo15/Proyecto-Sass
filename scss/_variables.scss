@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Numito:300,400,700');
+
+$font-family: 'Numito', sans-serif;
+$colors: (
+    primary: #333,
+    secondary: #ffe,
+    tertiary: #f2f0f1,
+    quaternary: #e75480
+);
+$background-color_1: rgb(202, 202, 202);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$font-sizes: (
+    xs: 1.6rem,
+    sm: 1.8rem,
+    md: 2rem,
+    lg: 2.5rem,
+    xl: 3rem,
+    xxl: 6rem,
+);
+
+@function font-size ($size-name) {
+    @return map-get($font-sizes, $size-name);
+}
+
+$font-weight: (
+    light: 300,
+    regular: 400,
+    bold: 700,
+);
+
+@function font-weight ($weight-name) {
+    @return map-get($font-weight, $weight-name);
+}
