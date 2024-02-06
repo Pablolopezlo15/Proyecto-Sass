@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Numito:300,400,700");
 header {
   background-color: #cacaca;
-  padding: 2rem; }
+  padding: 1rem; }
 
 .menu {
   display: flex;
@@ -10,6 +10,12 @@ header {
 .heading {
   text-align: center;
   margin-bottom: 2rem; }
+
+.first-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
 
 .second-nav {
   display: flex;
@@ -48,6 +54,93 @@ footer {
         footer .rrss ul li img {
           width: 2rem; }
 
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .hero p {
+    margin: 0; }
+  .hero input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px; }
+  .hero select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px; }
+  .hero label {
+    margin-right: 10px; }
+  .hero input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px; }
+    .hero input[type="text"]:focus {
+      border-color: #007bff;
+      outline: none; }
+
+.publi {
+  width: 100%; }
+  .publi .publi-img {
+    width: 100%;
+    height: 30vh;
+    background-image: url(https://i0.wp.com/ruteando.mx/wp-content/uploads/2023/03/los-10-mejores-destinos-para-vacacionar.jpg?resize=800%2C530&ssl=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; }
+
+.slider2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto; }
+  .slider2 .slides2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out; }
+  .slider2 .slide2 {
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .slider2 .slide2 img {
+      max-width: 100%;
+      height: auto;
+      max-height: 50vh; }
+  .slider2 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer; }
+    .slider2 button.prev {
+      left: 10px; }
+    .slider2 button.next {
+      right: 10px; }
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(0); }
+  25% {
+    transform: translateX(-100%); }
+  50% {
+    transform: translateX(-200%); }
+  75% {
+    transform: translateX(-300%); }
+  100% {
+    transform: translateX(-400%); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -77,19 +170,19 @@ footer {
   margin: 1rem; }
 
 .galeria-container:nth-child(1) {
-  background-color: #961ad7; }
+  background-color: #5a6843; }
 
 .galeria-container:nth-child(2) {
-  background-color: #13997a; }
+  background-color: #279796; }
 
 .galeria-container:nth-child(3) {
-  background-color: #4fd59f; }
+  background-color: #1f9b3e; }
 
 .galeria-container:nth-child(4) {
-  background-color: #0132f7; }
+  background-color: #1d3bb1; }
 
 .galeria-container:nth-child(5) {
-  background-color: #f2a289; }
+  background-color: #70f8c1; }
 
 .galeria-container:nth-child(6) {
-  background-color: #690699; }
+  background-color: #cf7a12; }

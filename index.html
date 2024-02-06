@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
 </head>
 <body>
     <header>
@@ -24,25 +25,76 @@
             </nav>
         </div>
 
-
-
-        <div class="heading">
-            <h1>Ejercicio 3</h1>
-            <h2>Plantilla SaSS</h2>
-        </div>
-
-        <nav class="second-nav">
-            <ul>
-                <li class="second-nav-item"><a href="" class="second-nav-link">Opcion 1</a></li>
-                <li class="second-nav-item"><a href="" class="second-nav-link">Opcion 2</a></li>
-                <li class="second-nav-item"><a href="" class="second-nav-link">Opcion 3</a></li>
-                <li class="second-nav-item"><a href="" class="second-nav-link">Opcion 4</a></li>
-
-            </ul>
-        </nav>
-
     </header>
-    <main >
+    <main>
+        <section class="hero">
+            <div>
+                <div>
+                    <i class="ri-sun-line"></i>                
+                </div>
+                <div>
+                    <p>grados</p>
+                </div>
+            </div>
+            <div class="llegada">
+                <div>
+                    <p>Llegada</p>
+                </div>
+                <div>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="salida">
+                <div>
+                    <p>Salida</p>
+                </div>
+                <div>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="habitaciones">
+                <div>
+                    <p>Habitaciones</p>
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option value="">ComboBox</option>
+                        <option value="">ComboBox</option>
+                        <option value="">ComboBox</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buscar">
+                <label for="">Buscar:</label>
+                <input type="text">
+            </div>
+        </section>
+
+        <section class="publi">
+            <div class="publi-container">
+                <div class="publi-img">
+                </div>
+        </section>
+
+
+        <section>
+            <div class="slider2">
+              <div class="slides2">
+                  <div class="slide2" id="slide1">
+                      <img src="https://a.cdn-hotels.com/gdcs/production97/d475/9cc9bb30-8910-45ed-8bcc-e0fe12824ae7.jpg?impolicy=fcrop&w=1600&h=1066&q=medium">
+                  </div>
+                  <div class="slide2" id="slide2">
+                      <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fda%2Fb0%2Fdab06f35d4a432e9daa3a06429c9cf499190d3e5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]">
+                  </div>
+                  <div class="slide2" id="slide3">
+                      <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F51%2Fca%2F51cace79660c4cc96f847279d78d993c35524c8a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]">
+                  </div>
+              </div>
+              <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button class="next" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+          </section>
+    
         <div class="galeria">
             <section class="galeria-container">
                 <div class="galeria-img">
@@ -122,6 +174,6 @@
             <p>IES Francisco Ayala</p>
         </div>
     </footer>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

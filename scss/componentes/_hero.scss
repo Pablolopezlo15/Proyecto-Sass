@@ -1,0 +1,46 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+    p {
+        margin: 0;
+    }
+
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 60px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        &:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+    }
+}
