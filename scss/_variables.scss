@@ -35,3 +35,12 @@ $font-weight: (
 @function font-weight ($weight-name) {
     @return map-get($font-weight, $weight-name);
 }
+
+.container {
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
