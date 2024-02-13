@@ -8,39 +8,14 @@
   padding: 0 2rem; }
 
 header {
-  background-color: #cacaca;
-  padding: 1rem; }
+  height: 85vh; }
+  header nav {
+    padding: 1rem;
+    height: 15vh; }
 
-.menu {
-  display: flex;
-  justify-content: space-between; }
-
-.heading {
-  text-align: center;
-  margin-bottom: 2rem; }
-
-.first-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem; }
-
-.second-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem; }
-
-nav ul {
-  display: flex;
-  gap: 1rem; }
-  nav ul li {
-    list-style: none; }
-
-.logo {
-  width: 5%; }
-  .logo img {
-    width: 100%; }
+.bg-scroll {
+  transition: 0.5s;
+  background-color: #ffffffcb; }
 
 footer {
   width: 100%;
@@ -48,7 +23,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #cacaca;
+  background-color: #141414;
   padding: 2rem; }
   footer .rrss {
     margin: 1rem; }
@@ -68,10 +43,11 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 100%;
+  height: 20vh;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  background-color: #141414;
+  color: #ffe;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .hero p {
     margin: 0; }
   .hero input[type="date"] {
@@ -99,17 +75,16 @@ footer {
   width: 100%; }
   .publi .publi-img {
     width: 100%;
-    height: 30vh;
-    background-image: url(https://i0.wp.com/ruteando.mx/wp-content/uploads/2023/03/los-10-mejores-destinos-para-vacacionar.jpg?resize=800%2C530&ssl=1);
+    height: 85vh;
+    background-image: url("../assets/img/casas/hero.jpg");
     background-size: cover;
-    background-position: center;
-    border-radius: 10px; }
+    background-position: center; }
 
 .slider2 {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 50px auto; }
   .slider2 .slides2 {
     display: flex;
@@ -124,6 +99,14 @@ footer {
       max-width: 100%;
       height: auto;
       max-height: 50vh; }
+    .slider2 .slide2 .slider-text {
+      width: 100%;
+      position: absolute;
+      top: 10%;
+      color: #ffe;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold; }
   .slider2 button {
     position: absolute;
     top: 50%;
@@ -252,19 +235,19 @@ footer {
   margin: 1rem; }
 
 .galeria-container:nth-child(1) {
-  background-color: #1e4a1c; }
+  background-color: #8e40d6; }
 
 .galeria-container:nth-child(2) {
-  background-color: #de9398; }
+  background-color: #47706d; }
 
 .galeria-container:nth-child(3) {
-  background-color: #e1c59f; }
+  background-color: #fa16a3; }
 
 .galeria-container:nth-child(4) {
-  background-color: #7d0422; }
+  background-color: #834d3b; }
 
 .galeria-container:nth-child(5) {
-  background-color: #991dd2; }
+  background-color: #a253ab; }
 
 .galeria-container:nth-child(6) {
-  background-color: #9ece04; }
+  background-color: #b13d23; }

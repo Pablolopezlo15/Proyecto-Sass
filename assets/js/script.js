@@ -10,3 +10,13 @@ function showSlide(n) {
     if (n < 1) { currentSlide = 3; }
     slides.style.transform = `translateX(${-(currentSlide - 1) * 100}%)`;
 }
+
+window.addEventListener('scroll', function() {
+    const nav = document.getElementById('nav');
+    if (window.pageYOffset > 0) {
+        console.log('scroll');
+        nav.classList.add('bg-scroll');
+    } else {
+        nav.classList.remove('bg-scroll');
+    }
+});

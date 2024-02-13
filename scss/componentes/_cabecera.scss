@@ -1,39 +1,15 @@
+
 header {
-	background-color: $background-color_1;
-	padding: 1rem;
-}
-.menu {
-	display: flex;
-	justify-content: space-between;
-}
-.heading {
-	text-align: center;
-	margin-bottom: 2rem;
-}
-.first-nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-}	
-.second-nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-}
-nav {
-	ul {
-		display: flex;
-		gap: 1rem;
-		li {
-			list-style: none;
-		}
+	height: 85vh;
+	nav {
+		padding: 1rem;
+		height: 15vh;
 	}
+
+
 }
-.logo {
-	width: 5%;
-	img {
-		width: 100%;
-	}
+
+.bg-scroll {
+	transition: 0.5s;
+	background-color: color('menu');
 }

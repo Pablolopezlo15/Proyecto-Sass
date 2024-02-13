@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px auto;
 
     .slides2 {
@@ -21,6 +21,15 @@
             max-width: 100%;
             height: auto;
             max-height: 50vh;
+        }
+        .slider-text {
+            width: 100%;
+            position: absolute;
+            top: 10%;
+            color: color('secondary');
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
     }
 

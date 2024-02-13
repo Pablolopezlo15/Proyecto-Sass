@@ -2,12 +2,12 @@
 
 $font-family: 'Numito', sans-serif;
 $colors: (
-    primary: #333,
+    primary: rgb(20, 20, 20),
     secondary: #ffe,
     tertiary: #f2f0f1,
-    quaternary: #e75480
+    quaternary: #e75480,
+    menu: #ffffffcb,
 );
-$background-color_1: rgb(202, 202, 202);
 
 @function color ($color-name) {
     @return map-get($colors, $color-name);
@@ -35,6 +35,8 @@ $font-weight: (
 @function font-weight ($weight-name) {
     @return map-get($font-weight, $weight-name);
 }
+
+
 
 .container {
     max-width: 80vw;
