@@ -5,8 +5,8 @@ $colors: (
     primary: rgb(20, 20, 20),
     secondary: #ffe,
     tertiary: #f2f0f1,
-    quaternary: #e75480,
-    menu: #ffffffcb,
+    quaternary: #c05000,
+    menu: #000000cb,
 );
 
 @function color ($color-name) {
@@ -14,12 +14,12 @@ $colors: (
 }
 
 $font-sizes: (
-    xs: 1.6rem,
-    sm: 1.8rem,
-    md: 2rem,
-    lg: 2.5rem,
-    xl: 3rem,
-    xxl: 6rem,
+    xs: 1rem,
+    sm: 1.3rem,
+    md: 1.6rem,
+    lg: 1.8rem,
+    xl: 2rem,
+    xxl: 2.5rem,
 );
 
 @function font-size ($size-name) {

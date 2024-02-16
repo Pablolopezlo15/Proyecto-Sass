@@ -4,3 +4,9 @@
     align-items: center;
     padding: 1rem;
 }
+
+@mixin galeria($min: 300px, $max: 1fr) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min, $max));
+    width: 100%;
+  }

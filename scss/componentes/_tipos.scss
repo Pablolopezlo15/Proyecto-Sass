@@ -1,88 +1,18 @@
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
-    max-width: 100%;
-    width: 100%;
-  }
-  
-  @media (min-width: 540px) {
-    .card-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (min-width: 960px) {
-    .card-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
-  .hero-section {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    width: 100%;
-    justify-content: center;
-    padding: 2rem;
-  }
-  
-  .card {
-    list-style: none;
-    position: relative;
-    border: none;
-  
-    &:before {
-      content: '';
-      display: block;
-      padding-bottom: 150%;
+.galeria-tipos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+
+  .card-tipos{
+    width: 300px;
+    
+    img{
       width: 100%;
+      height: 400px;
+      object-fit: cover;
     }
   }
-  
-  .card__background {
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
-    bottom: 0;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85);
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: center;
-    transform: scale(1) translateZ(0);
-    transition: filter 200ms linear, transform 200ms linear;
-  }
-  
-  .card:hover .card__background {
-    transform: scale(1.05) translateZ(0);
-  }
-  
-  .card-grid:hover > .card:not(:hover) .card__background {
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
-  
-  .card__content {
-    padding: 1.5rem;
-    position: absolute;
-    border: none;
-  }
-  
-  .card__category {
-    /* color: var(--text-light); */
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-  }
-  
-  .card__heading {
-    font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-    line-height: 1.4;
-    word-spacing: 100vw;
-  }
+}

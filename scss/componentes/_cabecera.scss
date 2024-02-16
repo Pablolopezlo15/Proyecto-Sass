@@ -5,6 +5,20 @@ header {
 		padding: 1rem;
 		height: 15vh;
 	}
+	
+		a.navbar-brand{
+			color: color('quaternary');
+			img{
+				width: 100px;
+			}
+		}
+		a.nav-link{
+			color: color('quaternary');	
+			font-size: font-size('sm');
+		}
+		.navbar-toggler{
+			border: color('quaternary') 2px solid;
+		}
 
 
 }
@@ -12,4 +26,5 @@ header {
 .bg-scroll {
 	transition: 0.5s;
 	background-color: color('menu');
+	border-bottom: 5px solid color('quaternary');
 }

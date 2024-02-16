@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Numito:300,400,700");
 .container {
   max-width: 80vw;
@@ -12,10 +13,20 @@ header {
   header nav {
     padding: 1rem;
     height: 15vh; }
+  header a.navbar-brand {
+    color: #c05000; }
+    header a.navbar-brand img {
+      width: 100px; }
+  header a.nav-link {
+    color: #c05000;
+    font-size: 1.3rem; }
+  header .navbar-toggler {
+    border: #c05000 2px solid; }
 
 .bg-scroll {
   transition: 0.5s;
-  background-color: #ffffffcb; }
+  background-color: #000000cb;
+  border-bottom: 5px solid #c05000; }
 
 footer {
   width: 100%;
@@ -45,8 +56,8 @@ footer {
   max-width: 100%;
   height: 20vh;
   padding: 20px;
-  background-color: #141414;
-  color: #ffe;
+  background-color: whitesmoke;
+  color: #141414;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .hero p {
     margin: 0; }
@@ -132,79 +143,76 @@ footer {
   100% {
     transform: translateX(-400%); } }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: 2rem;
-  max-width: 100%;
-  width: 100%; }
-
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr); } }
-
-.hero-section {
-  position: relative;
-  align-items: center;
-  justify-content: center;
+.galeria-tipos {
   display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  width: 100%;
   justify-content: center;
-  padding: 2rem; }
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem; }
+  .galeria-tipos .card-tipos {
+    width: 300px; }
+    .galeria-tipos .card-tipos img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover; }
 
-.card {
-  list-style: none;
+.opiniones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  background-color: #f9f9f9; }
+  .opiniones img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+  .opiniones .texto-opinion {
+    text-align: left; }
+    .opiniones .texto-opinion h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    .opiniones .texto-opinion p {
+      font-size: 1.2rem; }
+  .opiniones .estrellas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .opiniones .estrellas img {
+      width: 20px;
+      height: 20px; }
+
+.opiniones-container {
   position: relative;
-  border: none; }
-  .card:before {
-    content: '';
-    display: block;
-    padding-bottom: 150%;
-    width: 100%; }
+  height: 300px;
+  /* Ajusta esto según tus necesidades */
+  overflow: hidden; }
 
-.card__background {
-  background-size: cover;
-  background-position: center;
-  border-radius: 25px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
+.opiniones-slide {
   position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear; }
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slider 10s infinite;
+  /* Ajusta la duración según tus necesidades */ }
 
-.card:hover .card__background {
-  transform: scale(1.05) translateZ(0); }
+@keyframes slider {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  60% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 
-.card-grid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px); }
-
-.card__content {
-  padding: 1.5rem;
-  position: absolute;
-  border: none; }
-
-.card__category {
-  /* color: var(--text-light); */
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase; }
-
-.card__heading {
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.4;
-  word-spacing: 100vw; }
+.opiniones-slide:nth-child(2) {
+  animation-delay: 1s;
+  /* Ajusta el retraso según tus necesidades */ }
 
 * {
   margin: 0;
@@ -235,19 +243,19 @@ footer {
   margin: 1rem; }
 
 .galeria-container:nth-child(1) {
-  background-color: #8e40d6; }
+  background-color: #35051b; }
 
 .galeria-container:nth-child(2) {
-  background-color: #47706d; }
+  background-color: #5b883b; }
 
 .galeria-container:nth-child(3) {
-  background-color: #fa16a3; }
+  background-color: #e0c5aa; }
 
 .galeria-container:nth-child(4) {
-  background-color: #834d3b; }
+  background-color: #ccdda0; }
 
 .galeria-container:nth-child(5) {
-  background-color: #a253ab; }
+  background-color: #104ed9; }
 
 .galeria-container:nth-child(6) {
-  background-color: #b13d23; }
+  background-color: #6cd18a; }
