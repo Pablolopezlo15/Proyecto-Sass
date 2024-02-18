@@ -15,8 +15,8 @@
 
 // Mixin para definir los estilos comunes de las tarjetas de opinión
 @mixin opinion-card-base {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 500px;
     perspective: 1000px;
     position: relative;
     cursor: pointer;

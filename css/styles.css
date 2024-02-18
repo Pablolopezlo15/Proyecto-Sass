@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Numito:300,400,700");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .container {
@@ -24,8 +23,8 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px; }
   .opiniones-section .opinion-card {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 500px;
     perspective: 1000px;
     position: relative;
     cursor: pointer; }
@@ -292,59 +291,20 @@ footer {
     object-fit: cover;
     display: block; }
 
-.opiniones {
+.opiniones-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
   padding: 1rem;
   border: 1px solid #e1e1e1;
   background-color: #f9f9f9; }
-  .opiniones img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; }
-  .opiniones .texto-opinion {
-    text-align: left; }
-    .opiniones .texto-opinion h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem; }
-    .opiniones .texto-opinion p {
-      font-size: 1.2rem; }
-  .opiniones .estrellas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .opiniones .estrellas img {
-      width: 20px;
-      height: 20px; }
 
-.opiniones-container {
-  position: relative;
-  height: 300px;
-  /* Ajusta esto según tus necesidades */
-  overflow: hidden; }
-
-.opiniones-slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  animation: slider 10s infinite;
-  /* Ajusta la duración según tus necesidades */ }
-
-@keyframes slider {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: 1; }
-  40% {
-    opacity: 1; }
-  60% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-.opiniones-slide:nth-child(2) {
-  animation-delay: 1s;
-  /* Ajusta el retraso según tus necesidades */ }
+.opiniones-grid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center; }
