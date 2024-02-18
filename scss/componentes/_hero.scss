@@ -1,47 +1,48 @@
 .hero {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 100%;
-    height: 20vh;
-    padding: 20px;
-    background-color: whitesmoke;
-    color: color('primary');
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: 20vh;
+  padding: 20px;
+  background-color: whitesmoke;
+  color: color('primary');
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 
-    p {
-        margin: 0;
-    }
+  p {
+      margin: 0;
+  }
 
-    input[type="date"] {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+  input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
 
-    select {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+  select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
 
-    label {
-        margin-right: 10px;
-    }
+  label {
+      margin-right: 10px;
+  }
 
-    input[type="text"] {
-        width: calc(100% - 60px);
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+  input[type="text"] {
+      width: calc(100% - 60px);
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
 
-        &:focus {
-            border-color: #007bff;
-            outline: none;
-        }
-    }
+      &:focus {
+          border-color: #007bff;
+          outline: none;
+      }
+  }
 }

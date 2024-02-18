@@ -23,10 +23,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="detalle.html">Casa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="busqueda.html">Buscar</a>
                         </li>
                     </ul>
                 </div>
@@ -86,7 +86,7 @@
         </section>
 
 
-        <!-- <section>
+        <section>
             <div class="slider2">
               <div class="slides2">
                   <div class="slide2" id="slide1">
@@ -111,14 +111,15 @@
               <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
               <button class="next" onclick="changeSlide(1)">&#10095;</button>
           </div>
-          </section> -->
+          </section>
 
           
-        <section>
+        <section class="section-tipos">
+          <h2>Lugares de Interés</h2>
             <div class="galeria-tipos">
                 <div class="card-tipos">
                     <div>
-                        <h3></h3>
+                        <h3>Con Jardín</h3>
                     </div>
                     <div>
                         <img src="./assets/img/casas/design.jpg" alt="">
@@ -126,7 +127,7 @@
                 </div>
                 <div class="card-tipos">
                     <div>
-                        <h3></h3>
+                        <h3>Minimalista</h3>
                     </div>
                     <div>
                         <img src="./assets/img/casas/interier.jpg" alt="">
@@ -134,7 +135,7 @@
                 </div>
                 <div class="card-tipos">
                     <div>
-                        <h3></h3>
+                        <h3>Acogedor</h3>
                     </div>
                     <div>
                         <img src="./assets/img/casas/lest.jpg" alt="">
@@ -142,7 +143,7 @@
                 </div>
                 <div class="card-tipos">
                     <div>
-                        <h3></h3>
+                        <h3>Diseño Moderno</h3>
                     </div>
                     <div>
                         <img src="./assets/img/casas/villas.jpg" alt="">
@@ -151,94 +152,109 @@
             </div>    
         </section>
 
-        <section class="opiniones">
-            <div class="opiniones-container">
-                <!-- Opinión 1 -->
-                <div class="opiniones-slide">
-                    <div class="opiniones-text">
-                        <h2>Opinión 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="opiniones-img">
-                        <img src="./assets/img/casas/casa1.jpg" alt="">
-                    </div>
-                </div>
-                <!-- Opinión 2 -->
-                <div class="opiniones-slide">
-                    <div class="opiniones-text">
-                        <h2>Opinión 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="opiniones-img">
-                        <img src="./assets/img/casas/casa2.jpg" alt="">
-                    </div>
-                </div>
-                <!-- Agrega más opiniones aquí -->
+        <section class="opiniones-section">
+          <div class="opiniones-grid">
+            <div class="opinion-card">
+              <div class="opinion-card__front">
+                <img src="./assets/img/casas/aventura.jpg" alt="Opinion 1">
+              </div>
+              <div class="opinion-card__back">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lectus vitae nunc efficitur, nec sollicitudin quam posuere.</p>
+              </div>
             </div>
+            <div class="opinion-card">
+              <div class="opinion-card__front">
+                <img src="./assets/img/casas/aventura2.jpg" alt="Opinion 2">
+              </div>
+              <div class="opinion-card__back">
+                <p>Nullam vestibulum sapien eget libero accumsan, ut laoreet felis ultricies. Fusce pharetra libero nec risus dignissim.</p>
+              </div>
+            </div>
+            <!-- More opinion cards can be added here -->
+          </div>
         </section>
+        
 
-    
-        <!-- <div class="galeria">
-            <section class="galeria-container">
-                <div class="galeria-img">
-                    <img src="https://cdn.worldvectorlogo.com/logos/facebook-icon-1.svg" alt="">
-                </div>
-                <div class="galeria-text">
-                    <h2>Facebook</h2>
-                    <p>Lorem ipsum dolor sit amet con sectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-            </section>
-
-            <section class="galeria-container">
-                <div class="galeria-img">
-                    <img src="https://cdn.worldvectorlogo.com/logos/twitter-6.svg" alt="">
-                </div>
-                <div class="galeria-text">
-                    <h2>Twitter</h2>
-                    <p>Lorem ipsum dolor sit amet con sectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-            </section>
-
-            <section class="galeria-container">
-                <div class="galeria-img">
-                    <img src="https://cdn.worldvectorlogo.com/logos/youtube-icon-5.svg" alt="">
-                </div>
-                <div class="galeria-text">
-                    <h2>Youtube</h2>
-                    <p>Lorem ipsum dolor sit amet con sectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-            </section>
-
-            <section class="galeria-container">
-                <div class="galeria-img">
-                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="">
-                </div>
-                <div class="galeria-text">
-                    <h2>LinkedIn</h2>
-                    <p>Lorem ipsum dolor sit amet con sectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-            </section>
-
-            <section class="galeria-container">
-                <div class="galeria-img">
-                    <img src="https://cdn.worldvectorlogo.com/logos/instagram-2016-5.svg" alt="">
-                </div>
-                <div class="galeria-text">
-                    <h2>Instagram</h2>
-                    <p>Lorem ipsum dolor sit amet con sectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-            </section>
-
-            <section class="galeria-container">
-                <div class="galeria-img">
-                    <img src="https://cdn.worldvectorlogo.com/logos/pinterest-2-1.svg" alt="">
-                </div>
-                <div class="galeria-text">
-                    <h2>Pinterest</h2>
-                    <p>Lorem ipsum dolor sit amet con sectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-            </section> -->
-
+    		<!----------------------------------------------------- GALLERY -->
+		<section class="gallery">
+			<!----------------------------------------- IMAGE 1 -->
+			<figure class="gallery__item gallery__item--1">
+				<img src="./assets/img/galeria/gal-1.jpeg" alt="Gallery image 1" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 2 -->
+			<figure class="gallery__item gallery__item--2">
+				<img src="./assets/img/galeria/gal-2.jpeg" alt="Gallery image 2" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 3 -->
+			<figure class="gallery__item gallery__item--3">
+				<img src="./assets/img/galeria/gal-3.jpeg" alt="Gallery image 3" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 4 -->
+			<figure class="gallery__item gallery__item--4">
+				<img src="./assets/img/galeria/gal-4.jpeg" alt="Gallery image 4" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 5 -->
+			<figure class="gallery__item gallery__item--5">
+				<img src="./assets/img/galeria/gal-5.jpeg" alt="Gallery image 5" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 6 -->
+			<figure class="gallery__item gallery__item--6">
+				<img src="./assets/img/galeria/gal-6.jpeg" alt="Gallery image 6" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 7 -->
+			<figure class="gallery__item gallery__item--7">
+				<img src="./assets/img/galeria/gal-7.jpeg" alt="Gallery image 7" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 8 -->
+			<figure class="gallery__item gallery__item--8">
+				<img src="./assets/img/galeria/gal-8.jpeg" alt="Gallery image 8" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 9 -->
+			<figure class="gallery__item gallery__item--9">
+				<img src="./assets/img/galeria/gal-9.jpeg" alt="Gallery image 9" class="gallery__img" />
+			</figure>
+			<!----------------------------------------- IMAGE 10 -->
+			<figure class="gallery__item gallery__item--10">
+				<img
+					src="./assets/img/galeria/gal-10.jpeg"
+					alt="Gallery image 10"
+					class="gallery__img"
+				/>
+			</figure>
+			<!----------------------------------------- IMAGE 11 -->
+			<figure class="gallery__item gallery__item--11">
+				<img
+					src="./assets/img/galeria/gal-11.jpeg"
+					alt="Gallery image 11"
+					class="gallery__img"
+				/>
+			</figure>
+			<!----------------------------------------- IMAGE 12 -->
+			<figure class="gallery__item gallery__item--12">
+				<img
+					src="./assets/img/galeria/gal-12.jpeg"
+					alt="Gallery image 12"
+					class="gallery__img"
+				/>
+			</figure>
+			<!----------------------------------------- IMAGE 13 -->
+			<figure class="gallery__item gallery__item--13">
+				<img
+					src="./assets/img/galeria/gal-13.jpeg"
+					alt="Gallery image 13"
+					class="gallery__img"
+				/>
+			</figure>
+			<!----------------------------------------- IMAGE 14 -->
+			<figure class="gallery__item gallery__item--14">
+				<img
+					src="./assets/img/galeria/gal-14.jpeg"
+					alt="Gallery image 14"
+					class="gallery__img"
+				/>
+			</figure>
+		</section>
+   
     </main>
 
     <footer>

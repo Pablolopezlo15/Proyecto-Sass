@@ -1,10 +1,13 @@
 @import './_variables.scss';
+@import './layout/base.scss';
+
 @import './_mixin.scss';
+@import './_funciones.scss';
 @import './componentes/_cabecera.scss';
 @import './componentes/_footer.scss';
 @import './componentes/_hero.scss';
 @import './componentes/_publi.scss';
 @import './componentes/_slider.scss';
 @import './componentes/_tipos.scss';
+@import './componentes/_gallery.scss';
 @import './componentes/_opiniones.scss';
-@import './layout/base.scss';

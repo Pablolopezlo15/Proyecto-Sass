@@ -1,30 +1,39 @@
-
+/// Header styles
 header {
-	height: 85vh;
-	nav {
-		padding: 1rem;
-		height: 15vh;
-	}
-	
-		a.navbar-brand{
-			color: color('quaternary');
-			img{
-				width: 100px;
-			}
-		}
-		a.nav-link{
-			color: color('quaternary');	
-			font-size: font-size('sm');
-		}
-		.navbar-toggler{
-			border: color('quaternary') 2px solid;
-		}
-
-
+    /// Header height
+    height: 85vh;
+    /// Navigation styles
+    nav {
+        padding: 1rem;
+        height: 15vh;
+    }
+    /// Navbar brand styles
+    a.navbar-brand{
+        color: color('quaternary');
+        /// Navbar brand image styles
+        img{
+            width: 100px;
+        }
+    }
+    /// Navigation link styles
+    a.nav-link{
+        color: color('quaternary');    
+        font-size: font-size('sm');
+    }
+    /// Navbar toggler styles
+    .navbar-toggler{
+        border: color('quaternary') 2px solid;
+    }
 }
 
+/// Background scroll styles
 .bg-scroll {
-	transition: 0.5s;
-	background-color: color('menu');
-	border-bottom: 5px solid color('quaternary');
+	background-attachment: fixed;
+    transition: 1s;
+    background-color: color('menu');
+    border-bottom: 5px solid color('quaternary');
+	height: 10vh;
+}
+.navbar-collapse{
+	width: 100%;
 }
