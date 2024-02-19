@@ -8,12 +8,6 @@
   margin: 0 auto;
   padding: 0 2rem; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Karla', sans-serif; }
-
 .opiniones-section {
   display: flex;
   justify-content: center;
@@ -65,6 +59,73 @@
       transform: rotateY(-180deg); }
     .opiniones-section .opinion-card:hover .opinion-card__back {
       transform: rotateY(0deg); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  width: auto;
+  border-bottom: #c05000 3px solid; }
+
+footer {
+  background-color: #141414;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 2rem; }
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-column-gap: 20px; }
+    @media screen and (max-width: 768px) {
+      footer .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-column-gap: 20px; } }
+    @media screen and (max-width: 480px) {
+      footer .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        grid-column-gap: 20px; } }
+  footer .footer-info {
+    padding: 10px; }
+    footer .footer-info h4 {
+      margin-bottom: 10px; }
+    footer .footer-info .footer-text ul {
+      list-style: none;
+      padding: 0; }
+      footer .footer-info .footer-text ul li {
+        margin-bottom: 5px; }
+        footer .footer-info .footer-text ul li a {
+          color: #fff;
+          text-decoration: none; }
+          footer .footer-info .footer-text ul li a:hover {
+            text-decoration: underline; }
+  footer .metodos-rrss {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    footer .metodos-rrss .metodos ul,
+    footer .metodos-rrss .rrss ul {
+      list-style: none;
+      padding: 0;
+      display: flex; }
+      footer .metodos-rrss .metodos ul li,
+      footer .metodos-rrss .rrss ul li {
+        margin-right: 10px; }
+      footer .metodos-rrss .metodos ul a,
+      footer .metodos-rrss .rrss ul a {
+        color: #fff;
+        text-decoration: none; }
+        footer .metodos-rrss .metodos ul a i,
+        footer .metodos-rrss .rrss ul a i {
+          font-size: 20px; }
 
 header {
   height: 85vh; }
@@ -178,7 +239,7 @@ footer {
       width: 100%;
       position: absolute;
       top: 10%;
-      color: #ffe;
+      color: #ffffff;
       text-align: center;
       font-size: 24px;
       font-weight: bold; }
@@ -208,10 +269,12 @@ footer {
     transform: translateX(-400%); } }
 
 .section-tipos {
-  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   text-align: center; }
-  .section-tipos h2 {
-    margin-bottom: 2rem; }
   .section-tipos .galeria-tipos {
     display: flex;
     justify-content: center;
@@ -291,14 +354,23 @@ footer {
     object-fit: cover;
     display: block; }
 
+.opiniones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
 .opiniones-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  width: 100%;
   margin-bottom: 2rem;
   padding: 1rem;
   border: 1px solid #e1e1e1;
-  background-color: #f9f9f9; }
+  background-color: #bdbdbd; }
 
 .opiniones-grid {
   display: grid;
@@ -308,3 +380,140 @@ footer {
   padding: 1rem;
   justify-content: center;
   align-items: center; }
+
+.opinion-card__front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center; }
+
+.slider-propiedades {
+  position: relative;
+  display: block;
+  width: 30vw;
+  min-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px; }
+
+@media screen and (max-width: 1095px) {
+  .slider-propiedades {
+    width: 90vw;
+    height: 200px; } }
+
+.slider-propiedades:before, .slider-propiedades:after {
+  content: '<-';
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  background: #c05000;
+  color: #bdbdbd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; }
+
+.slider-propiedades:after {
+  content: '->';
+  left: auto;
+  right: 1rem; }
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+.input-slider {
+  appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateX(100%);
+  transition: transform ease-in-out 400ms;
+  z-index: 1; }
+
+.input-slider:focus {
+  outline: none; }
+
+.input-slider:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
+
+.input-slider:after {
+  content: attr(title);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: .5rem;
+  font-size: 1rem;
+  border-radius: 5px; }
+
+.input-slider:not(checked):before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  top: 50%;
+  left: calc(-100% + 1rem); }
+
+.input-slider:checked:before {
+  display: none;
+  left: 1rem; }
+
+.input-slider:checked {
+  transform: translateX(0);
+  z-index: 0;
+  box-shadow: -5px 10px 20px -15px black; }
+
+.input-slider:checked + .input-slider:before {
+  left: -3rem; }
+
+.input-slider:checked + .input-slider ~ .input-slider:before {
+  display: none; }
+
+.propiedades {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem; }
+  .propiedades .propiedad {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; }
+    .propiedades .propiedad .propiedad-datos {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-between; }
+      .propiedades .propiedad .propiedad-datos .services i {
+        font-size: 2rem;
+        color: #141414; }
+  @media screen and (max-width: 1095px) {
+    .propiedades {
+      gap: 2rem; }
+      .propiedades .propiedad {
+        width: 95%; }
+        .propiedades .propiedad .propiedad-datos {
+          width: 100%; } }

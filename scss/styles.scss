@@ -1,8 +1,11 @@
 @import './_variables.scss';
-@import './layout/base.scss';
-
 @import './_mixin.scss';
 @import './_funciones.scss';
+
+@import './layout/_base.scss';
+@import './layout/_footer.scss';
+
+
 @import './componentes/_cabecera.scss';
 @import './componentes/_footer.scss';
 @import './componentes/_hero.scss';
@@ -11,3 +14,6 @@
 @import './componentes/_tipos.scss';
 @import './componentes/_gallery.scss';
 @import './componentes/_opiniones.scss';
+@import './componentes/_sliderdetalle.scss';
+@import './componentes/_propiedades.scss';
+

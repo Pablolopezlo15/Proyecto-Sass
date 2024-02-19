@@ -1,11 +1,12 @@
 .section-tipos{
-  background-color: color('secundary',);
-  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: color('secundary');
   text-align: center;
 
-  h2{
-    margin-bottom: 2rem;
-  }
 
   .galeria-tipos{
     @include flex-center-wrap;

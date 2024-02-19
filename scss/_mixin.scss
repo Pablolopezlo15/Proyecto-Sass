@@ -12,7 +12,21 @@
     flex-wrap: wrap;
 }
 
-
+  // Definir mixin para flexbox
+  @mixin flexbox-rrss($direccion, $justificar, $alinear) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificar;
+    align-items: $alinear;
+  }
+  
+  // Definir mixin para grid
+  @mixin grid($columnas, $min-ancho, $max-ancho, $espacio-entre-columnas) {
+    display: grid;
+    grid-template-columns: repeat($columnas, minmax($min-ancho, $max-ancho));
+    grid-column-gap: $espacio-entre-columnas;
+  }
+  
 // Mixin para definir los estilos comunes de las tarjetas de opinión
 @mixin opinion-card-base {
     width: 100%;

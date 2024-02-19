@@ -1,0 +1,106 @@
+.slider-propiedades {
+	position: relative;
+	display: block;
+	width: 30vw;
+    min-width: 300px;
+    height: 300px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+@media screen and (max-width: 1095px) {
+    .slider-propiedades {
+        width: 90vw;
+        height: 200px;
+    }
+    
+}
+.slider-propiedades:before, .slider-propiedades:after {
+	content: '<-';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	background: color('quaternary');
+	color: color('secondary');
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+.slider-propiedades:after {
+	content: '->';
+	left: auto;
+	right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+.input-slider {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+.input-slider:focus {
+	outline: none;
+}
+.input-slider:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+.input-slider:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+.input-slider:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+
+.input-slider:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+.input-slider:checked {
+	transform: translateX(0);
+	z-index: 0;
+	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+}
+
+.input-slider:checked + .input-slider:before {
+	left: -3rem;
+}
+
+.input-slider:checked + .input-slider ~ .input-slider:before {
+	display: none;
+}

@@ -1,0 +1,80 @@
+// Definir función para calcular espaciado
+@function calcular-espaciado($numero-columnas, $ancho-columna, $espacio-entre-columnas) {
+    @return ($numero-columnas * $ancho-columna) + (($numero-columnas - 1) * $espacio-entre-columnas);
+  }
+  
+
+  
+  // Estilos para el footer
+  footer {
+    background-color: color('primary');
+    color: color('tertiary');
+    padding: 20px;
+    margin-top: 2rem;
+  
+    .footer-container {
+      @include grid(4, 100px, 1fr, 20px);
+  
+      @media screen and (max-width: 768px) {
+        @include grid(2, 100px, 1fr, 20px);
+      }
+  
+      @media screen and (max-width: 480px) {
+        @include grid(1, 100px, 1fr, 20px);
+      }
+    }
+  
+    .footer-info {
+      padding: 10px;
+  
+      h4 {
+        margin-bottom: 10px;
+      }
+  
+      .footer-text {
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            margin-bottom: 5px;
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .metodos-rrss {
+      @include flexbox-rrss(column, space-between, center);
+  
+      .metodos,
+      .rrss {
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+  
+          li {
+            margin-right: 10px;
+          }
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+  
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

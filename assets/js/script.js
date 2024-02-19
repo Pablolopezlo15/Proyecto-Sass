@@ -20,3 +20,5 @@ window.addEventListener('scroll', function() {
         nav.classList.remove('bg-scroll');
     }
 });
+
+
