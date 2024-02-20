@@ -7,19 +7,25 @@ header {
         padding: 1rem;
         height: 15vh;
     }
+
     /// Navbar brand styles
     a.navbar-brand{
         color: color('quaternary');
         /// Navbar brand image styles
         img{
-            width: 100px;
+            width: 64px;
         }
     }
     /// Navigation link styles
     a.nav-link{
         color: color('quaternary');    
         font-size: font-size('sm');
+
+        &:hover{
+            @include hover-animation;            
+        }
     }
+
     /// Navbar toggler styles
     .navbar-toggler{
         border: color('quaternary') 2px solid;
@@ -29,11 +35,15 @@ header {
 /// Background scroll styles
 .bg-scroll {
 	background-attachment: fixed;
-    transition: 1s;
+    transition: 0.2s;
     background-color: color('menu');
     border-bottom: 5px solid color('quaternary');
-	height: 10vh;
+	height: 12vh;
 }
 .navbar-collapse{
 	width: 100%;
+}
+
+.container-fluid .show{
+    padding-bottom: 15rem;
 }

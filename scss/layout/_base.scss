@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 h2{
     font-size: 2rem;
     font-weight: 700;

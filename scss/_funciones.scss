@@ -35,3 +35,14 @@
       @include opinion-card-hover-effect;
     }
   }
+
+
+  // Función para generar estilos de texto
+  @function text-style($weight, $size, $color) {
+    @return (
+        font-family: "Open sans",
+        font-weight: $weight,
+        font-size: $size,
+        color: $color
+    );
+  }
