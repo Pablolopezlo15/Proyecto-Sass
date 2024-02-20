@@ -29,6 +29,9 @@ header {
     /// Navbar toggler styles
     .navbar-toggler{
         border: color('quaternary') 2px solid;
+        .navbar-toggler-icon{
+            color: color('quaternary');
+        }
     }
 }
 
@@ -46,4 +49,9 @@ header {
 
 .container-fluid .show{
     padding-bottom: 15rem;
+}
+
+.header-detalle{
+    background-color: color('menu');
+    height: 12vh;
 }

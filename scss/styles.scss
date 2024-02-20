@@ -4,10 +4,8 @@
 
 @import './layout/_base.scss';
 @import './layout/_footer.scss';
+@import './layout/_cabecera.scss';
 
-
-@import './componentes/_cabecera.scss';
-@import './componentes/_footer.scss';
 @import './componentes/_hero.scss';
 @import './componentes/_publi.scss';
 @import './componentes/_slider.scss';
@@ -17,4 +15,5 @@
 @import './componentes/_sliderdetalle.scss';
 @import './componentes/_propiedades.scss';
 @import './componentes/_testimonios.scss';
+@import './componentes/_detalle.scss';
 

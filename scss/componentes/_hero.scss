@@ -5,10 +5,12 @@
   justify-content: space-around;
   align-items: center;
   max-width: 100%;
-  height: 20vh;
+  height: 15vh;
   padding: 20px;
-  background-color: color('quaternary');
+  background-color: color('secondary');
   color: color('primary');
+  border-bottom: 2px solid color('quaternary');
+  border-top: 2px solid color('quaternary');
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 

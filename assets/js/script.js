@@ -87,3 +87,16 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById('prev-btn').addEventListener('click', prevTestimonial);
   document.getElementById('next-btn').addEventListener('click', nextTestimonial);
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const mainImage = document.querySelector('.detalle-img > img');
+  const smallImages = document.querySelectorAll('.detalle-masimagenes > img');
+
+  smallImages.forEach(function(img) {
+      img.addEventListener('click', function() {
+          mainImage.src = img.src;
+      });
+  });
+});
