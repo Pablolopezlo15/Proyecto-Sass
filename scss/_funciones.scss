@@ -5,24 +5,9 @@
   
   // Aplicar estilos a las tarjetas de opinión
   .opiniones-section {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  
-    .opiniones-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
   
     .opinion-card {
       @include opinion-card-base;
-  
-      @for $i from 1 through 5 {
-        &:nth-child(#{$i}) {
-          background-color: generate-color($i);
-        }
-      }
   
       &__front {
         @include opinion-card-front;

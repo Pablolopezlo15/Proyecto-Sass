@@ -5,11 +5,10 @@
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+    
     .propiedad{
+        @include flex-center;
         width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 1rem;
         gap: 2rem;
         flex-wrap: wrap;
@@ -18,12 +17,12 @@
         .propiedad-datos{
             width: 50%;
             display: flex;
+            justify-content: space-between;
             flex-direction: column;
             gap: 1rem;
-            justify-content: space-between;
             .services{
                 i{
-                    font-size: 2rem;
+                    font-size: font-size('md');
                     color: color('primary');
                 }
             }

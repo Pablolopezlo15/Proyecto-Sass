@@ -1,8 +1,9 @@
-@mixin flex-center {
+@mixin flex-center($direccion: row, $gap: 0) {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    flex-direction: $direccion;
+    gap: $gap;
 }
 
 @mixin flex-center-wrap {
@@ -13,12 +14,12 @@
 }
 
   // Definir mixin para flexbox
-  @mixin flexbox-rrss($direccion, $justificar, $alinear) {
+@mixin flexbox-rrss($direccion, $justificar, $alinear) {
     display: flex;
     flex-direction: $direccion;
     justify-content: $justificar;
     align-items: $alinear;
-  }
+}
   
   // Definir mixin para grid
   @mixin grid($columnas, $min-ancho, $max-ancho, $espacio-entre-columnas) {
@@ -94,3 +95,5 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+

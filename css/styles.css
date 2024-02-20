@@ -1,5 +1,54 @@
-@import url("https://fonts.googleapis.com/css?family=Numito:300,400,700");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.opiniones-section .opinion-card {
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  position: relative;
+  cursor: pointer; }
+  .opiniones-section .opinion-card__front, .opiniones-section .opinion-card__back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s ease; }
+  .opiniones-section .opinion-card__front {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .opiniones-section .opinion-card__front img {
+      max-width: 100%;
+      max-height: 100%;
+      transition: opacity 0.6s ease; }
+  .opiniones-section .opinion-card__back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .opiniones-section .opinion-card:hover .opinion-card__front {
+    transform: rotateY(-180deg); }
+  .opiniones-section .opinion-card:hover .opinion-card__back {
+    transform: rotateY(0deg); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+h2 {
+  font-size: "xl";
+  font-weight: 700;
+  margin-bottom: 1rem;
+  width: auto;
+  border-bottom: #c05000 3px solid; }
+
 .container {
   max-width: 80vw;
   display: flex;
@@ -7,74 +56,6 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 2rem; }
-
-.opiniones-section {
-  display: flex;
-  justify-content: center;
-  padding: 20px; }
-  .opiniones-section .opiniones-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; }
-  .opiniones-section .opinion-card {
-    width: 100%;
-    height: 400px;
-    perspective: 1000px;
-    position: relative;
-    cursor: pointer; }
-    .opiniones-section .opinion-card__front, .opiniones-section .opinion-card__back {
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      position: absolute;
-      transition: transform 0.6s ease; }
-    .opiniones-section .opinion-card:nth-child(1) {
-      background-color: "red"; }
-    .opiniones-section .opinion-card:nth-child(2) {
-      background-color: "green"; }
-    .opiniones-section .opinion-card:nth-child(3) {
-      background-color: "blue"; }
-    .opiniones-section .opinion-card:nth-child(4) {
-      background-color: "yellow"; }
-    .opiniones-section .opinion-card:nth-child(5) {
-      background-color: "purple"; }
-    .opiniones-section .opinion-card__front {
-      background-color: #f1f1f1;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .opiniones-section .opinion-card__front img {
-        max-width: 100%;
-        max-height: 100%;
-        transition: opacity 0.6s ease; }
-    .opiniones-section .opinion-card__back {
-      transform: rotateY(180deg);
-      background-color: #fff;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
-    .opiniones-section .opinion-card:hover .opinion-card__front {
-      transform: rotateY(-180deg); }
-    .opiniones-section .opinion-card:hover .opinion-card__back {
-      transform: rotateY(0deg); }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Karla', sans-serif; }
-
-html {
-  scroll-behavior: smooth; }
-
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  width: auto;
-  border-bottom: #c05000 3px solid; }
 
 footer {
   background-color: #141414;
@@ -128,24 +109,28 @@ footer {
         text-decoration: none; }
         footer .metodos-rrss .metodos ul a i,
         footer .metodos-rrss .rrss ul a i {
-          font-size: 20px; }
+          font-size: 2rem; }
 
 header {
   height: 85vh; }
   header nav {
     padding: 1rem;
     height: 15vh; }
-  header a.navbar-brand {
-    color: #c05000; }
-    header a.navbar-brand img {
-      width: 64px; }
-  header a.nav-link {
-    color: #c05000;
-    font-size: 1.3rem; }
-  header .navbar-toggler {
-    border: #c05000 2px solid; }
-    header .navbar-toggler .navbar-toggler-icon {
+    header nav a.navbar-brand {
       color: #c05000; }
+      header nav a.navbar-brand img {
+        width: 64px; }
+    header nav a.nav-link {
+      color: #c05000;
+      font-size: 1.3rem; }
+    header nav .navbar-toggler {
+      border: #c05000 2px solid; }
+      header nav .navbar-toggler .navbar-toggler-icon {
+        color: #c05000; }
+    header nav .container-fluid .show {
+      padding-bottom: 15rem; }
+    header nav .container-fluid .navbar-collapse {
+      width: 100%; }
 
 .bg-scroll {
   background-attachment: fixed;
@@ -153,12 +138,6 @@ header {
   background-color: #000000cb;
   border-bottom: 5px solid #c05000;
   height: 12vh; }
-
-.navbar-collapse {
-  width: 100%; }
-
-.container-fluid .show {
-  padding-bottom: 15rem; }
 
 .header-detalle {
   background-color: #000000cb;
@@ -264,9 +243,9 @@ header {
 
 .section-tipos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 2rem;
   text-align: center; }
   .section-tipos .galeria-tipos {
@@ -355,13 +334,14 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; }
+  gap: 2rem; }
 
 .opiniones-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 0;
   width: 100%;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -379,8 +359,11 @@ header {
 
 .opinion-card__front {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
+  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
   border: 1px solid #e1e1e1;
@@ -423,7 +406,6 @@ header {
   left: auto;
   right: 1rem; }
 
-/* I haven't found a way for IE and Edge to let me style inputs that way */
 .input-slider {
   appearance: none;
   -ms-appearance: none;
@@ -492,10 +474,12 @@ header {
   gap: 2rem;
   margin-top: 2rem; }
   .propiedades .propiedad {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    gap: 0;
+    width: 80%;
     padding: 1rem;
     gap: 2rem;
     flex-wrap: wrap;
@@ -504,11 +488,11 @@ header {
     .propiedades .propiedad .propiedad-datos {
       width: 50%;
       display: flex;
+      justify-content: space-between;
       flex-direction: column;
-      gap: 1rem;
-      justify-content: space-between; }
+      gap: 1rem; }
       .propiedades .propiedad .propiedad-datos .services i {
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: #141414; }
   @media screen and (max-width: 1095px) {
     .propiedades {
@@ -519,12 +503,14 @@ header {
           width: 100%; } }
 
 .testimonios {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: row;
+  gap: 0;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
 
 .slider {
   width: 80%;
@@ -630,11 +616,7 @@ header {
       @media screen and (max-width: 768px) {
         .detalle-container .detalle-img {
           flex: 0 0 100%;
-          max-width: 100%; }
-          .detalle-container .detalle-img img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px; } }
+          max-width: 100%; } }
       .detalle-container .detalle-img .detalle-masimagenes {
         display: flex;
         flex-wrap: wrap;
@@ -663,16 +645,21 @@ header {
           flex: 0 0 90%;
           flex-direction: column;
           max-width: 90%; } }
-      .detalle-container .detalle-info h2 {
-        font-size: 24px;
+      .detalle-container .detalle-info .detalle-descripcion h3,
+      .detalle-container .detalle-info .detalle-amenidades h3,
+      .detalle-container .detalle-info .detalle-ubicacion h3,
+      .detalle-container .detalle-info .detalle-precio h3,
+      .detalle-container .detalle-info .detalle-reservar h3,
+      .detalle-container .detalle-info .detalle-contacto h3 {
+        font-size: 1.6rem;
         margin-bottom: 10px; }
-      .detalle-container .detalle-info p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px; }
-      .detalle-container .detalle-info .detalle-amenidades h3 {
-        font-size: 20px;
-        margin-bottom: 10px; }
+      .detalle-container .detalle-info .detalle-descripcion p,
+      .detalle-container .detalle-info .detalle-amenidades p,
+      .detalle-container .detalle-info .detalle-ubicacion p,
+      .detalle-container .detalle-info .detalle-precio p,
+      .detalle-container .detalle-info .detalle-reservar p,
+      .detalle-container .detalle-info .detalle-contacto p {
+        font-size: 1rem; }
       .detalle-container .detalle-info .detalle-amenidades ul {
         list-style: none;
         padding: 0; }
@@ -681,35 +668,19 @@ header {
           margin-bottom: 5px; }
           .detalle-container .detalle-info .detalle-amenidades ul li i {
             margin-right: 5px; }
-      .detalle-container .detalle-info .detalle-ubicacion,
-      .detalle-container .detalle-info .detalle-precio,
-      .detalle-container .detalle-info .detalle-reservar {
-        margin-top: 20px; }
-        .detalle-container .detalle-info .detalle-ubicacion h3,
-        .detalle-container .detalle-info .detalle-precio h3,
-        .detalle-container .detalle-info .detalle-reservar h3 {
-          font-size: 20px;
-          margin-bottom: 10px; }
-        .detalle-container .detalle-info .detalle-ubicacion p,
-        .detalle-container .detalle-info .detalle-precio p,
-        .detalle-container .detalle-info .detalle-reservar p {
-          font-size: 16px; }
-        .detalle-container .detalle-info .detalle-ubicacion button,
-        .detalle-container .detalle-info .detalle-precio button,
-        .detalle-container .detalle-info .detalle-reservar button {
-          font-size: 18px;
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: #fff;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s ease; }
-          .detalle-container .detalle-info .detalle-ubicacion button:hover,
-          .detalle-container .detalle-info .detalle-precio button:hover,
-          .detalle-container .detalle-info .detalle-reservar button:hover {
-            background-color: #0056b3; }
-      .detalle-container .detalle-info .detalle-info1 {
+      .detalle-container .detalle-info .detalle-reservar button {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; }
+        .detalle-container .detalle-info .detalle-reservar button:hover {
+          background-color: #0056b3; }
+      .detalle-container .detalle-info .detalle-info1,
+      .detalle-container .detalle-info .detalle-contacto {
         display: flex;
         flex-direction: column;
         flex: 0 0 70%;
@@ -718,18 +689,10 @@ header {
         padding-left: 1rem;
         border-left: #c05000 2px solid; }
         @media screen and (max-width: 768px) {
-          .detalle-container .detalle-info .detalle-info1 {
-            flex: 0 0 100%;
-            max-width: 100%; } }
-      .detalle-container .detalle-info .detalle-contacto {
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 30%;
-        max-width: 30%;
-        height: 100%;
-        padding-left: 1rem;
-        border-left: #c05000 2px solid; }
-        @media screen and (max-width: 768px) {
+          .detalle-container .detalle-info .detalle-info1,
           .detalle-container .detalle-info .detalle-contacto {
             flex: 0 0 100%;
             max-width: 100%; } }
+      .detalle-container .detalle-info .detalle-contacto {
+        flex: 0 0 30%;
+        max-width: 30%; }

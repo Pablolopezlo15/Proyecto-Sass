@@ -1,9 +1,6 @@
 .section-tipos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  @include flex-center(column, 2rem);
+
   background-color: color('secundary');
   text-align: center;
 

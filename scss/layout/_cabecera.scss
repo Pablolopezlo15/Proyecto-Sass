@@ -1,57 +1,61 @@
 /// Header styles
 header {
-    /// Header height
-    height: 85vh;
-    /// Navigation styles
+    height: 85vh; // Header height
+
     nav {
         padding: 1rem;
-        height: 15vh;
-    }
+        height: 15vh; // Navigation styles
 
-    /// Navbar brand styles
-    a.navbar-brand{
-        color: color('quaternary');
-        /// Navbar brand image styles
-        img{
-            width: 64px;
+        a.navbar-brand {
+            color: color('quaternary'); // Navbar brand styles
+
+            img {
+                width: 64px; // Navbar brand image styles
+            }
         }
-    }
-    /// Navigation link styles
-    a.nav-link{
-        color: color('quaternary');    
-        font-size: font-size('sm');
 
-        &:hover{
-            @include hover-animation;            
-        }
-    }
-
-    /// Navbar toggler styles
-    .navbar-toggler{
-        border: color('quaternary') 2px solid;
-        .navbar-toggler-icon{
+        a.nav-link {
             color: color('quaternary');
+            font-size: font-size('sm'); // Navigation link styles
+
+            &:hover {
+                @include hover-animation;
+            }
+        }
+
+        .navbar-toggler {
+            border: color('quaternary') 2px solid; // Navbar toggler styles
+
+            .navbar-toggler-icon {
+                color: color('quaternary');
+            }
+        }
+
+        .container-fluid {
+            .show {
+                padding-bottom: 15rem;
+            }
+
+            .navbar-collapse {
+                width: 100%;
+            }
         }
     }
 }
 
-/// Background scroll styles
 .bg-scroll {
-	background-attachment: fixed;
+    background-attachment: fixed;
     transition: 0.2s;
     background-color: color('menu');
     border-bottom: 5px solid color('quaternary');
-	height: 12vh;
-}
-.navbar-collapse{
-	width: 100%;
+    height: 12vh; // Background scroll styles
 }
 
-.container-fluid .show{
-    padding-bottom: 15rem;
-}
 
-.header-detalle{
+
+
+
+.header-detalle {
     background-color: color('menu');
     height: 12vh;
 }

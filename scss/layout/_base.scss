@@ -1,17 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
+    font-family: $font-family;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
+
 h2{
-    font-size: 2rem;
+    font-size: ('xl');
     font-weight: 700;
     margin-bottom: 1rem;
     width: auto;
     border-bottom: color('quaternary') 3px solid;
+}
+
+.container {
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
