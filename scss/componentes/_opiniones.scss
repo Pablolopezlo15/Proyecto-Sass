@@ -21,9 +21,7 @@
 }
 
 .opinion-card__front{
-    @include flex-center;
-    flex-direction: column;
-    gap: 1rem;
+    @include flex-center(column, 1rem);
     padding: 1rem;
     border: 1px solid #e1e1e1;
     background-color: color('tertiary');
