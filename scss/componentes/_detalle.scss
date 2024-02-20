@@ -8,17 +8,30 @@
       gap: 4rem;
   
       .detalle-img {
+        display: flex;
+        flex-direction: column;
         flex: 0 0 60%;
         max-width: 60%;
-        margin-right: 20px;
-  
+        min-width: 300px;
         img {
           width: 100%;
           height: auto;
           border-radius: 8px;
         }
+   
+        @media screen and (max-width: 768px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+            
+        }
         .detalle-masimagenes{
             display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
             margin-top: 1rem;
             img{
@@ -30,6 +43,13 @@
                     border: color('quaternary') 5px solid;
                     cursor: pointer;
                 }
+
+            }
+
+            @media screen and (max-width: 768px){
+                justify-content: center;
+                align-items: center;
+                
             }
 
         }
@@ -37,10 +57,17 @@
   
       .detalle-info {
         display: flex;
-
+        gap: 2rem;
         flex: 0 0 60%;
         max-width: 60%;
   
+        height: 100%;
+
+        @media screen and (max-width: 768px) {
+            flex: 0 0 90%;
+            flex-direction: column;
+            max-width: 90%;
+        }
         h2 {
           font-size: 24px;
           margin-bottom: 10px;
@@ -102,12 +129,33 @@
             }
           }
         }
+        .detalle-info1{
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 70%;
+            max-width: 70%;
+            height: 100%;
+            padding-left: 1rem;
+            border-left: color('quaternary') 2px solid;
+            @media screen and (max-width: 768px){
+                flex: 0 0 100%;
+                max-width: 100%;
+                
+            }
+        }
         .detalle-contacto{
             display: flex;
             flex-direction: column;
-            align-items: center;
             flex: 0 0 30%;
             max-width: 30%;
+            height: 100%;
+            padding-left: 1rem;
+            border-left: color('quaternary') 2px solid;
+            @media screen and (max-width: 768px){
+                flex: 0 0 100%;
+                max-width: 100%;
+                
+            }
 
         }
       }

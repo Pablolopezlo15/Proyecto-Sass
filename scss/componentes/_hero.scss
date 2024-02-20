@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  height: 15vh;
+  min-height: 15vh;
   padding: 20px;
   background-color: color('secondary');
   color: color('primary');
