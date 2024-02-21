@@ -1,0 +1,900 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Proyecto-sass - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Proyecto-sass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Proyecto-sass - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flex-center" data-type="mixin"><a href="#undefined-mixin-flex-center">flex-center</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flexbox" data-type="mixin"><a href="#undefined-mixin-flexbox">flexbox</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="gridfooter" data-type="mixin"><a href="#undefined-mixin-gridfooter">gridfooter</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="gridGalery" data-type="mixin"><a href="#undefined-mixin-gridGalery">gridGalery</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="gallery-item" data-type="mixin"><a href="#undefined-mixin-gallery-item">gallery-item</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="card-properties" data-type="mixin"><a href="#undefined-mixin-card-properties">card-properties</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="opinion-card-hover-effect" data-type="mixin"><a href="#undefined-mixin-opinion-card-hover-effect">opinion-card-hover-effect</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="hover-animation" data-type="mixin"><a href="#undefined-mixin-hover-animation">hover-animation</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="crear-boton" data-type="mixin"><a href="#undefined-mixin-crear-boton">crear-boton</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="calcular-espaciado" data-type="function"><a href="#undefined-function-calcular-espaciado">calcular-espaciado</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color" data-type="function"><a href="#undefined-function-color">color</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-size" data-type="function"><a href="#undefined-function-font-size">font-size</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-weight" data-type="function"><a href="#undefined-function-font-weight">font-weight</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-family" data-type="variable"><a href="#undefined-variable-font-family">font-family</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="bg" data-type="variable"><a href="#undefined-variable-bg">bg</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="colors" data-type="variable"><a href="#undefined-variable-colors">colors</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-sizes" data-type="variable"><a href="#undefined-variable-font-sizes">font-sizes</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-weight" data-type="variable"><a href="#undefined-variable-font-weight">font-weight</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="navbar-height" data-type="variable"><a href="#undefined-variable-navbar-height">navbar-height</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle" data-type="css"><a href="#undefined-css-.detalle">.detalle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-container" data-type="css"><a href="#undefined-css-&amp;-container">&amp;-container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-img" data-type="css"><a href="#undefined-css-.detalle-img">.detalle-img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-masimagenes" data-type="css"><a href="#undefined-css-.detalle-masimagenes">.detalle-masimagenes</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-info" data-type="css"><a href="#undefined-css-.detalle-info">.detalle-info</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto" data-type="css"><a href="#undefined-css-.detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto">.detalle-descripcion, .detalle-amenidades, .detalle-ubicacion, .detalle-precio, .detalle-reservar, .detalle-contacto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-amenidades" data-type="css"><a href="#undefined-css-.detalle-amenidades">.detalle-amenidades</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-reservar" data-type="css"><a href="#undefined-css-.detalle-reservar">.detalle-reservar</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-info1,
+            .detalle-contacto" data-type="css"><a href="#undefined-css-.detalle-info1,
+            .detalle-contacto">.detalle-info1, .detalle-contacto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detalle-contacto" data-type="css"><a href="#undefined-css-.detalle-contacto">.detalle-contacto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".opiniones" data-type="css"><a href="#undefined-css-.opiniones">.opiniones</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".opiniones-section" data-type="css"><a href="#undefined-css-.opiniones-section">.opiniones-section</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".opiniones-grid" data-type="css"><a href="#undefined-css-.opiniones-grid">.opiniones-grid</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".opinion-card" data-type="css"><a href="#undefined-css-.opinion-card">.opinion-card</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__front" data-type="css"><a href="#undefined-css-&amp;__front">&amp;__front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__back" data-type="css"><a href="#undefined-css-&amp;__back">&amp;__back</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".opinion-card__front" data-type="css"><a href="#undefined-css-.opinion-card__front">.opinion-card__front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".propiedades" data-type="css"><a href="#undefined-css-.propiedades">.propiedades</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".propiedad" data-type="css"><a href="#undefined-css-.propiedad">.propiedad</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".propiedad-datos" data-type="css"><a href="#undefined-css-.propiedad-datos">.propiedad-datos</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".services" data-type="css"><a href="#undefined-css-.services">.services</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".boton" data-type="css"><a href="#undefined-css-.boton">.boton</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".publi" data-type="css"><a href="#undefined-css-.publi">.publi</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".publi-img" data-type="css"><a href="#undefined-css-.publi-img">.publi-img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".slider2" data-type="css"><a href="#undefined-css-.slider2">.slider2</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".slides2" data-type="css"><a href="#undefined-css-.slides2">.slides2</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".slide2" data-type="css"><a href="#undefined-css-.slide2">.slide2</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".slider-text" data-type="css"><a href="#undefined-css-.slider-text">.slider-text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="css"><a href="#undefined-css-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;.prev" data-type="css"><a href="#undefined-css-&amp;.prev">&amp;.prev</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;.next" data-type="css"><a href="#undefined-css-&amp;.next">&amp;.next</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-flex-center"><h3 class="item__heading"><a class="item__name" href="#mixin-flex-center">flex-center</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex-center($direccion, $gap) { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direccion;
+    gap: $gap;
+ }" data-collapsed="@mixin flex-center($direccion, $gap) { ... }"><code>@mixin flex-center($direccion, $gap) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para centrar elementos flexibles</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direccion</code></th><td data-label="desc"><p>Dirección de la disposición flexbox (por defecto: row)</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$gap</code></th><td data-label="desc"><p>Espacio entre elementos (por defecto: 0)</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-flexbox"><h3 class="item__heading"><a class="item__name" href="#mixin-flexbox">flexbox</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flexbox($direccion, $justificar, $alinear) { 
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificar;
+    align-items: $alinear;
+ }" data-collapsed="@mixin flexbox($direccion, $justificar, $alinear) { ... }"><code>@mixin flexbox($direccion, $justificar, $alinear) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para flexbox</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direccion</code></th><td data-label="desc"><p>Dirección de la disposición flexbox</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justificar</code></th><td data-label="desc"><p>Forma de justificar los elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$alinear</code></th><td data-label="desc"><p>Forma de alinear los elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-gridfooter"><h3 class="item__heading"><a class="item__name" href="#mixin-gridfooter">gridfooter</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin gridfooter($columnas, $min-ancho, $max-ancho, $espacio-entre-columnas) { 
+    display: grid;
+    grid-template-columns: repeat($columnas, minmax($min-ancho, $max-ancho));
+    grid-column-gap: $espacio-entre-columnas;
+ }" data-collapsed="@mixin gridfooter($columnas, $min-ancho, $max-ancho, $espacio-entre-columnas) { ... }"><code>@mixin gridfooter($columnas, $min-ancho, $max-ancho, $espacio-entre-columnas) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para grid</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$columnas</code></th><td data-label="desc"><p>Número de columnas del grid</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$min-ancho</code></th><td data-label="desc"><p>Ancho mínimo de las columnas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$max-ancho</code></th><td data-label="desc"><p>Ancho máximo de las columnas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$espacio-entre-columnas</code></th><td data-label="desc"><p>Espacio entre columnas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-gridGalery"><h3 class="item__heading"><a class="item__name" href="#mixin-gridGalery">gridGalery</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin gridGalery($columnas, $max-ancho, $filas, $max-ancho-filas, $espacio-entre-columnas) { 
+    display: grid;
+    grid-template-columns: repeat($columnas, minmax(0, $max-ancho));
+    grid-template-rows: repeat($filas, minmax(0, $max-ancho-filas));
+    gap: $espacio-entre-columnas;
+    padding: $espacio-entre-columnas;
+ }" data-collapsed="@mixin gridGalery($columnas, $max-ancho, $filas, $max-ancho-filas, $espacio-entre-columnas) { ... }"><code>@mixin gridGalery($columnas, $max-ancho, $filas, $max-ancho-filas, $espacio-entre-columnas) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para grid de galería</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$columnas</code></th><td data-label="desc"><p>Número de columnas del grid</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$max-ancho</code></th><td data-label="desc"><p>Ancho máximo de las columnas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$filas</code></th><td data-label="desc"><p>Número de filas del grid</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$max-ancho-filas</code></th><td data-label="desc"><p>Ancho máximo de las filas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$espacio-entre-columnas</code></th><td data-label="desc"><p>Espacio entre columnas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-gallery-item"><h3 class="item__heading"><a class="item__name" href="#mixin-gallery-item">gallery-item</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin gallery-item($row, $row-span, $column, $column-span) { 
+    grid-row: $row / span $row-span;
+    grid-column: $column / span $column-span;
+ }" data-collapsed="@mixin gallery-item($row, $row-span, $column, $column-span) { ... }"><code>@mixin gallery-item($row, $row-span, $column, $column-span) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para definir las posiciones de los elementos de la galería</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$row</code></th><td data-label="desc"><p>Fila de inicio del elemento</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$row-span</code></th><td data-label="desc"><p>Número de filas que ocupa el elemento</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$column</code></th><td data-label="desc"><p>Columna de inicio del elemento</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$column-span</code></th><td data-label="desc"><p>Número de columnas que ocupa el elemento</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-card-properties"><h3 class="item__heading"><a class="item__name" href="#mixin-card-properties">card-properties</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin card-properties($bg-color) { 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s ease;
+    background: $bg-color;
+ }" data-collapsed="@mixin card-properties($bg-color) { ... }"><code>@mixin card-properties($bg-color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para definir las propiedades de las tarjetas</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$bg-color</code></th><td data-label="desc"><p>Color de fondo de la tarjeta</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-opinion-card-hover-effect"><h3 class="item__heading"><a class="item__name" href="#mixin-opinion-card-hover-effect">opinion-card-hover-effect</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin opinion-card-hover-effect() { 
+    &amp;:hover {
+        .opinion-card__front {
+          transform: rotateY(-180deg);
+        }
+  
+        .opinion-card__back {
+          transform: rotateY(0deg);
+        }
+    }
+ }" data-collapsed="@mixin opinion-card-hover-effect() { ... }"><code>@mixin opinion-card-hover-effect() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para definir el efecto de volteo al hacer hover en las tarjetas de opinión</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section><section class="main__item container item" id="undefined-mixin-hover-animation"><h3 class="item__heading"><a class="item__name" href="#mixin-hover-animation">hover-animation</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin hover-animation() { 
+    transition: all 0.5s ease-in-out;
+    color: color(&#39;blanco&#39;);
+    border-bottom: color(&#39;blanco&#39;) 2px solid;
+    border-top: color(&#39;blanco&#39;) 2px solid;
+    animation: menosmas 0.5s ease-in-out ;
+    cursor: pointer;
+ }" data-collapsed="@mixin hover-animation() { ... }"><code>@mixin hover-animation() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para la animación de hover</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-crear-boton"><h3 class="item__heading"><a class="item__name" href="#mixin-crear-boton">crear-boton</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin crear-boton($type) { 
+    @if $type == 1 {
+        #{$bg}: color(&#39;blanco&#39;);
+        color: color(&#39;naranja&#39;);
+        border: 2px solid color(&#39;naranja&#39;);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &amp;:hover {
+              animation: 1s flash 1;
+              #{$bg}: color(&#39;naranja&#39;);
+              color: color(&#39;blanco&#39;);
+        } 
+    }
+    @else if $type == 2 {
+        #{$bg}: color(&#39;blanco&#39;);
+        color: color(&#39;naranja&#39;);
+        padding: 0.5rem 1rem;
+        border: 1px color(&#39;naranja&#39;) solid;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all s ease;
+        box-shadow: inset 0 0 0 0 #ffffff;
+        -webkit-transition: ease-out 0.8s;
+        -moz-transition: ease-out 0.8s;
+        transition: ease-out 0.8s;
+        
+        &amp;:hover {
+            color: color(&#39;blanco&#39;);
+            box-shadow: inset 400px 0 0 0 color(&#39;naranja&#39;);
+        }
+    }
+ }" data-collapsed="@mixin crear-boton($type) { ... }"><code>@mixin crear-boton($type) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para crear botones</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$type</code></th><td data-label="desc"><p>Tipo de botón (1 o 2)</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-bg"><code>bg</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-bg"><code>bg</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-bg"><code>bg</code></a></li></ul></section></section><section class="main__sub-section" id="undefined-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="undefined-function-calcular-espaciado"><h3 class="item__heading"><a class="item__name" href="#function-calcular-espaciado">calcular-espaciado</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function calcular-espaciado($numero-columnas, $ancho-columna, $espacio-entre-columnas) { 
+    @return ($numero-columnas * $ancho-columna) + (($numero-columnas - 1) * $espacio-entre-columnas);
+ }" data-collapsed="@function calcular-espaciado($numero-columnas, $ancho-columna, $espacio-entre-columnas) { ... }"><code>@function calcular-espaciado($numero-columnas, $ancho-columna, $espacio-entre-columnas) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para calcular el espaciado</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$numero-columnas</code></th><td data-label="desc"><p>Número de columnas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$ancho-columna</code></th><td data-label="desc"><p>Ancho de cada columna</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$espacio-entre-columnas</code></th><td data-label="desc"><p>Espacio entre columnas</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="undefined-function-color"><h3 class="item__heading"><a class="item__name" href="#function-color">color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function color($color-name) { 
+    @return map-get($colors, $color-name);
+ }" data-collapsed="@function color($color-name) { ... }"><code>@function color($color-name) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para obtener el valor de un color de la paleta</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color-name</code></th><td data-label="desc"><p>Nombre del color a obtener</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-colors"><code>colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-hover-animation"><code>hover-animation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-hover-animation"><code>hover-animation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-hover-animation"><code>hover-animation</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li></ul></section><section class="main__item container item" id="undefined-function-font-size"><h3 class="item__heading"><a class="item__name" href="#function-font-size">font-size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function font-size($size-name) { 
+    @return map-get($font-sizes, $size-name);
+ }" data-collapsed="@function font-size($size-name) { ... }"><code>@function font-size($size-name) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para obtener el tamaño de fuente correspondiente</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size-name</code></th><td data-label="desc"><p>Nombre del tamaño de fuente a obtener</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-font-sizes"><code>font-sizes</code></a></li></ul></section><section class="main__item container item" id="undefined-function-font-weight"><h3 class="item__heading"><a class="item__name" href="#function-font-weight">font-weight</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function font-weight($weight-name) { 
+    @return map-get($font-weight, $weight-name);
+ }" data-collapsed="@function font-weight($weight-name) { ... }"><code>@function font-weight($weight-name) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para obtener el peso de fuente correspondiente</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$weight-name</code></th><td data-label="desc"><p>Nombre del peso de fuente a obtener</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-font-weight"><code>font-weight</code></a></li></ul></section></section><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-font-family">font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family: &#39;Karla&#39;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Define la familia de fuentes principal utilizada en el proyecto</p></div></section><section class="main__item container item" id="undefined-variable-bg"><h3 class="item__heading"><a class="item__name" href="#variable-bg">bg</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$bg: background-color;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variable para el color de fondo, utilizada como atajo para background-color</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-crear-boton"><code>crear-boton</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-colors"><h3 class="item__heading"><a class="item__name" href="#variable-colors">colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$colors: (
+    negro: rgb(20, 20, 20),
+    gris: rgb(189, 189, 189),
+    blanco: #ffffff,
+    naranja: #c05000,
+    menu: #000000cb,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Paleta de colores utilizada en el proyecto</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#undefined-function-color"><code>color</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-font-sizes"><h3 class="item__heading"><a class="item__name" href="#variable-font-sizes">font-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-sizes: (
+    xs: 1rem,
+    sm: 1.3rem,
+    md: 1.6rem,
+    lg: 1.8rem,
+    xl: 2rem,
+    xxl: 2.5rem,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaños de fuente utilizados en el proyecto</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#undefined-function-font-size"><code>font-size</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-font-weight"><h3 class="item__heading"><a class="item__name" href="#variable-font-weight">font-weight</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-weight: (
+    light: 300,
+    regular: 400,
+    bold: 700,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Pesos de fuente utilizados en el proyecto</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#undefined-function-font-weight"><code>font-weight</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-navbar-height"><h3 class="item__heading"><a class="item__name" href="#variable-navbar-height">navbar-height</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$navbar-height: 80px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Altura del navbar en el proyecto</p></div></section></section><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-.detalle"><h3 class="item__heading"><a class="item__name" href="#css-.detalle">.detalle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle {
+  padding: 50px 0;
+
+    /// Estilo para el subcontenedor dentro de &quot;detalle&quot;
+    &amp;-container {
+        @include flexbox(column, space-between, center); // Utiliza el mixin para flexbox con dirección columna, justificado espacio-entre y alineado al centro
+        gap: 4rem; // Espacio entre elementos dentro del contenedor
+
+        /// Estilo para la sección de imágenes dentro del contenedor
+        .detalle-img {
+            @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            width: 60%; // Ancho del elemento
+            min-width: 300px; // Ancho mínimo del elemento
+
+            img {
+                width: 100%; // Ancho completo de la imagen
+                height: auto; // Altura automática de la imagen
+                border-radius: 8px; // Borde redondeado de la imagen
+            }
+
+            @media screen and (max-width: 768px) {
+                flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                width: 100%; // Ancho completo del elemento en dispositivos de hasta 768px
+            }
+
+            /// Estilo para las imágenes adicionales dentro de la sección de imágenes
+            .detalle-masimagenes {
+                @include flexbox(row, flex-start, center); // Utiliza el mixin para flexbox con dirección fila, justificado al inicio y centrado verticalmente
+                flex-wrap: wrap; // Permite que los elementos se envuelvan en varias líneas si es necesario
+                gap: 1rem; // Espacio entre las imágenes
+                margin-top: 1rem; // Margen superior para separar del contenido superior
+
+                img {
+                    width: 150px; // Ancho de las imágenes adicionales
+                    height: 100px; // Altura de las imágenes adicionales
+                    border-radius: 8px; // Borde redondeado de las imágenes adicionales
+
+                    &amp;:hover {
+                        transition: 0.15s ease; // Transición suave al hacer hover
+                        border: color(&#39;naranja&#39;) 5px solid; // Borde naranja al hacer hover
+                        cursor: pointer; // Cambia el cursor al pasar sobre la imagen
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    justify-content: center; // Centra horizontalmente las imágenes adicionales en dispositivos de hasta 768px
+                    align-items: center; // Centra verticalmente las imágenes adicionales en dispositivos de hasta 768px
+                }
+            }
+        }
+
+        /// Estilo para la información dentro del contenedor
+        .detalle-info {
+            display: flex; // Utiliza flexbox para el diseño de la información
+            gap: 2rem; // Espacio entre elementos dentro de la información
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            max-width: 60%; // Ancho máximo del elemento
+            height: 100%; // Altura del elemento
+
+            @media screen and (max-width: 768px) {
+                flex: 0 0 90%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                flex-direction: column; // Cambia la dirección del elemento a columna en dispositivos de hasta 768px
+                max-width: 90%; // Ancho máximo del elemento en dispositivos de hasta 768px
+            }
+
+            /// Estilo para diferentes secciones de información dentro de la información
+            .detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto {
+                h3 {
+                    font-size: font-size(&#39;md&#39;); // Tamaño de fuente para los títulos
+                    margin-bottom: 10px; // Margen inferior para separar del contenido siguiente
+                }
+
+                p {
+                    font-size: font-size(&#39;xs&#39;); // Tamaño de fuente para los párrafos
+                }
+            }
+
+            /// Estilo para la sección de amenidades dentro de la información
+            .detalle-amenidades {
+                ul {
+                    list-style: none; // Elimina los puntos de la lista
+                    padding: 0; // Elimina el relleno de la lista
+
+                    li {
+                        font-size: 16px; // Tamaño de fuente para los elementos de la lista
+                        margin-bottom: 5px; // Margen inferior para separar los elementos de la lista
+
+                        i {
+                            margin-right: 5px; // Margen derecho para separar el icono del texto
+                        }
+                    }
+                }
+            }
+
+            /// Estilo para la sección de reservas dentro de la información
+            .detalle-reservar {
+                .boton{
+                    @include crear-boton(1); // Utiliza el mixin para crear un botón de estilo 1
+                }
+            }
+
+            /// Estilo para diferentes secciones de información secundaria dentro de la información
+            .detalle-info1,
+            .detalle-contacto {
+                @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+                flex: 0 0 70%; // Establece la flexibilidad del elemento
+                max-width: 70%; // Ancho máximo del elemento
+                height: 100%; // Altura del elemento
+                padding-left: 1rem; // Relleno izquierdo para separar del borde izquierdo
+                border-left: color(&#39;naranja&#39;) 2px solid; // Borde izquierdo naranja
+
+                @media screen and (max-width: 768px) {
+                    flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                    max-width: 100%; // Ancho máximo del elemento en dispositivos de hasta 768px
+                }
+            }
+
+            /// Estilo para la sección de contacto dentro de la información
+            .detalle-contacto {
+                flex: 0 0 30%; // Establece la flexibilidad del elemento
+                max-width: 30%; // Ancho máximo del elemento
+            }
+        } 
+    }
+}</code>" data-collapsed=".detalle { ... }"><code>.detalle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para el contenedor &quot;detalle&quot;</p></div></section><section class="main__item container item" id="undefined-css-&amp;-container"><h3 class="item__heading"><a class="item__name" href="#css-&amp;-container">&amp;-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-container {
+  @include flexbox(column, space-between, center); // Utiliza el mixin para flexbox con dirección columna, justificado espacio-entre y alineado al centro
+        gap: 4rem; // Espacio entre elementos dentro del contenedor
+
+        /// Estilo para la sección de imágenes dentro del contenedor
+        .detalle-img {
+            @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            width: 60%; // Ancho del elemento
+            min-width: 300px; // Ancho mínimo del elemento
+
+            img {
+                width: 100%; // Ancho completo de la imagen
+                height: auto; // Altura automática de la imagen
+                border-radius: 8px; // Borde redondeado de la imagen
+            }
+
+            @media screen and (max-width: 768px) {
+                flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                width: 100%; // Ancho completo del elemento en dispositivos de hasta 768px
+            }
+
+            /// Estilo para las imágenes adicionales dentro de la sección de imágenes
+            .detalle-masimagenes {
+                @include flexbox(row, flex-start, center); // Utiliza el mixin para flexbox con dirección fila, justificado al inicio y centrado verticalmente
+                flex-wrap: wrap; // Permite que los elementos se envuelvan en varias líneas si es necesario
+                gap: 1rem; // Espacio entre las imágenes
+                margin-top: 1rem; // Margen superior para separar del contenido superior
+
+                img {
+                    width: 150px; // Ancho de las imágenes adicionales
+                    height: 100px; // Altura de las imágenes adicionales
+                    border-radius: 8px; // Borde redondeado de las imágenes adicionales
+
+                    &amp;:hover {
+                        transition: 0.15s ease; // Transición suave al hacer hover
+                        border: color(&#39;naranja&#39;) 5px solid; // Borde naranja al hacer hover
+                        cursor: pointer; // Cambia el cursor al pasar sobre la imagen
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    justify-content: center; // Centra horizontalmente las imágenes adicionales en dispositivos de hasta 768px
+                    align-items: center; // Centra verticalmente las imágenes adicionales en dispositivos de hasta 768px
+                }
+            }
+        }
+
+        /// Estilo para la información dentro del contenedor
+        .detalle-info {
+            display: flex; // Utiliza flexbox para el diseño de la información
+            gap: 2rem; // Espacio entre elementos dentro de la información
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            max-width: 60%; // Ancho máximo del elemento
+            height: 100%; // Altura del elemento
+
+            @media screen and (max-width: 768px) {
+                flex: 0 0 90%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                flex-direction: column; // Cambia la dirección del elemento a columna en dispositivos de hasta 768px
+                max-width: 90%; // Ancho máximo del elemento en dispositivos de hasta 768px
+            }
+
+            /// Estilo para diferentes secciones de información dentro de la información
+            .detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto {
+                h3 {
+                    font-size: font-size(&#39;md&#39;); // Tamaño de fuente para los títulos
+                    margin-bottom: 10px; // Margen inferior para separar del contenido siguiente
+                }
+
+                p {
+                    font-size: font-size(&#39;xs&#39;); // Tamaño de fuente para los párrafos
+                }
+            }
+
+            /// Estilo para la sección de amenidades dentro de la información
+            .detalle-amenidades {
+                ul {
+                    list-style: none; // Elimina los puntos de la lista
+                    padding: 0; // Elimina el relleno de la lista
+
+                    li {
+                        font-size: 16px; // Tamaño de fuente para los elementos de la lista
+                        margin-bottom: 5px; // Margen inferior para separar los elementos de la lista
+
+                        i {
+                            margin-right: 5px; // Margen derecho para separar el icono del texto
+                        }
+                    }
+                }
+            }
+
+            /// Estilo para la sección de reservas dentro de la información
+            .detalle-reservar {
+                .boton{
+                    @include crear-boton(1); // Utiliza el mixin para crear un botón de estilo 1
+                }
+            }
+
+            /// Estilo para diferentes secciones de información secundaria dentro de la información
+            .detalle-info1,
+            .detalle-contacto {
+                @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+                flex: 0 0 70%; // Establece la flexibilidad del elemento
+                max-width: 70%; // Ancho máximo del elemento
+                height: 100%; // Altura del elemento
+                padding-left: 1rem; // Relleno izquierdo para separar del borde izquierdo
+                border-left: color(&#39;naranja&#39;) 2px solid; // Borde izquierdo naranja
+
+                @media screen and (max-width: 768px) {
+                    flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                    max-width: 100%; // Ancho máximo del elemento en dispositivos de hasta 768px
+                }
+            }
+
+            /// Estilo para la sección de contacto dentro de la información
+            .detalle-contacto {
+                flex: 0 0 30%; // Establece la flexibilidad del elemento
+                max-width: 30%; // Ancho máximo del elemento
+            }
+        }
+}</code>" data-collapsed="&amp;-container { ... }"><code>&amp;-container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para el subcontenedor dentro de &quot;detalle&quot;</p></div></section><section class="main__item container item" id="undefined-css-.detalle-img"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-img">.detalle-img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-img {
+  @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            width: 60%; // Ancho del elemento
+            min-width: 300px; // Ancho mínimo del elemento
+
+            img {
+                width: 100%; // Ancho completo de la imagen
+                height: auto; // Altura automática de la imagen
+                border-radius: 8px; // Borde redondeado de la imagen
+            }
+
+            @media screen and (max-width: 768px) {
+                flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                width: 100%; // Ancho completo del elemento en dispositivos de hasta 768px
+            }
+
+            /// Estilo para las imágenes adicionales dentro de la sección de imágenes
+            .detalle-masimagenes {
+                @include flexbox(row, flex-start, center); // Utiliza el mixin para flexbox con dirección fila, justificado al inicio y centrado verticalmente
+                flex-wrap: wrap; // Permite que los elementos se envuelvan en varias líneas si es necesario
+                gap: 1rem; // Espacio entre las imágenes
+                margin-top: 1rem; // Margen superior para separar del contenido superior
+
+                img {
+                    width: 150px; // Ancho de las imágenes adicionales
+                    height: 100px; // Altura de las imágenes adicionales
+                    border-radius: 8px; // Borde redondeado de las imágenes adicionales
+
+                    &amp;:hover {
+                        transition: 0.15s ease; // Transición suave al hacer hover
+                        border: color(&#39;naranja&#39;) 5px solid; // Borde naranja al hacer hover
+                        cursor: pointer; // Cambia el cursor al pasar sobre la imagen
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    justify-content: center; // Centra horizontalmente las imágenes adicionales en dispositivos de hasta 768px
+                    align-items: center; // Centra verticalmente las imágenes adicionales en dispositivos de hasta 768px
+                }
+            }
+}</code>" data-collapsed=".detalle-img { ... }"><code>.detalle-img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para la sección de imágenes dentro del contenedor</p></div></section><section class="main__item container item" id="undefined-css-.detalle-masimagenes"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-masimagenes">.detalle-masimagenes</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-masimagenes {
+  @include flexbox(row, flex-start, center); // Utiliza el mixin para flexbox con dirección fila, justificado al inicio y centrado verticalmente
+                flex-wrap: wrap; // Permite que los elementos se envuelvan en varias líneas si es necesario
+                gap: 1rem; // Espacio entre las imágenes
+                margin-top: 1rem; // Margen superior para separar del contenido superior
+
+                img {
+                    width: 150px; // Ancho de las imágenes adicionales
+                    height: 100px; // Altura de las imágenes adicionales
+                    border-radius: 8px; // Borde redondeado de las imágenes adicionales
+
+                    &amp;:hover {
+                        transition: 0.15s ease; // Transición suave al hacer hover
+                        border: color(&#39;naranja&#39;) 5px solid; // Borde naranja al hacer hover
+                        cursor: pointer; // Cambia el cursor al pasar sobre la imagen
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    justify-content: center; // Centra horizontalmente las imágenes adicionales en dispositivos de hasta 768px
+                    align-items: center; // Centra verticalmente las imágenes adicionales en dispositivos de hasta 768px
+                }
+}</code>" data-collapsed=".detalle-masimagenes { ... }"><code>.detalle-masimagenes { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para las imágenes adicionales dentro de la sección de imágenes</p></div></section><section class="main__item container item" id="undefined-css-.detalle-info"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-info">.detalle-info</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-info {
+  display: flex; // Utiliza flexbox para el diseño de la información
+            gap: 2rem; // Espacio entre elementos dentro de la información
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            max-width: 60%; // Ancho máximo del elemento
+            height: 100%; // Altura del elemento
+
+            @media screen and (max-width: 768px) {
+                flex: 0 0 90%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                flex-direction: column; // Cambia la dirección del elemento a columna en dispositivos de hasta 768px
+                max-width: 90%; // Ancho máximo del elemento en dispositivos de hasta 768px
+            }
+
+            /// Estilo para diferentes secciones de información dentro de la información
+            .detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto {
+                h3 {
+                    font-size: font-size(&#39;md&#39;); // Tamaño de fuente para los títulos
+                    margin-bottom: 10px; // Margen inferior para separar del contenido siguiente
+                }
+
+                p {
+                    font-size: font-size(&#39;xs&#39;); // Tamaño de fuente para los párrafos
+                }
+            }
+
+            /// Estilo para la sección de amenidades dentro de la información
+            .detalle-amenidades {
+                ul {
+                    list-style: none; // Elimina los puntos de la lista
+                    padding: 0; // Elimina el relleno de la lista
+
+                    li {
+                        font-size: 16px; // Tamaño de fuente para los elementos de la lista
+                        margin-bottom: 5px; // Margen inferior para separar los elementos de la lista
+
+                        i {
+                            margin-right: 5px; // Margen derecho para separar el icono del texto
+                        }
+                    }
+                }
+            }
+
+            /// Estilo para la sección de reservas dentro de la información
+            .detalle-reservar {
+                .boton{
+                    @include crear-boton(1); // Utiliza el mixin para crear un botón de estilo 1
+                }
+            }
+
+            /// Estilo para diferentes secciones de información secundaria dentro de la información
+            .detalle-info1,
+            .detalle-contacto {
+                @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+                flex: 0 0 70%; // Establece la flexibilidad del elemento
+                max-width: 70%; // Ancho máximo del elemento
+                height: 100%; // Altura del elemento
+                padding-left: 1rem; // Relleno izquierdo para separar del borde izquierdo
+                border-left: color(&#39;naranja&#39;) 2px solid; // Borde izquierdo naranja
+
+                @media screen and (max-width: 768px) {
+                    flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                    max-width: 100%; // Ancho máximo del elemento en dispositivos de hasta 768px
+                }
+            }
+
+            /// Estilo para la sección de contacto dentro de la información
+            .detalle-contacto {
+                flex: 0 0 30%; // Establece la flexibilidad del elemento
+                max-width: 30%; // Ancho máximo del elemento
+            }
+}</code>" data-collapsed=".detalle-info { ... }"><code>.detalle-info { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para la información dentro del contenedor</p></div></section><section class="main__item container item" id="undefined-css-.detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto">.detalle-descripcion, .detalle-amenidades, .detalle-ubicacion, .detalle-precio, .detalle-reservar, .detalle-contacto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto {
+  h3 {
+                    font-size: font-size(&#39;md&#39;); // Tamaño de fuente para los títulos
+                    margin-bottom: 10px; // Margen inferior para separar del contenido siguiente
+                }
+
+                p {
+                    font-size: font-size(&#39;xs&#39;); // Tamaño de fuente para los párrafos
+                }
+}</code>" data-collapsed=".detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto { ... }"><code>.detalle-descripcion,
+            .detalle-amenidades,
+            .detalle-ubicacion,
+            .detalle-precio,
+            .detalle-reservar,
+            .detalle-contacto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para diferentes secciones de información dentro de la información</p></div></section><section class="main__item container item" id="undefined-css-.detalle-amenidades"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-amenidades">.detalle-amenidades</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-amenidades {
+  ul {
+                    list-style: none; // Elimina los puntos de la lista
+                    padding: 0; // Elimina el relleno de la lista
+
+                    li {
+                        font-size: 16px; // Tamaño de fuente para los elementos de la lista
+                        margin-bottom: 5px; // Margen inferior para separar los elementos de la lista
+
+                        i {
+                            margin-right: 5px; // Margen derecho para separar el icono del texto
+                        }
+                    }
+                }
+}</code>" data-collapsed=".detalle-amenidades { ... }"><code>.detalle-amenidades { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para la sección de amenidades dentro de la información</p></div></section><section class="main__item container item" id="undefined-css-.detalle-reservar"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-reservar">.detalle-reservar</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-reservar {
+  .boton{
+                    @include crear-boton(1); // Utiliza el mixin para crear un botón de estilo 1
+                }
+}</code>" data-collapsed=".detalle-reservar { ... }"><code>.detalle-reservar { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para la sección de reservas dentro de la información</p></div></section><section class="main__item container item" id="undefined-css-.detalle-info1,
+            .detalle-contacto"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-info1,
+            .detalle-contacto">.detalle-info1, .detalle-contacto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-info1,
+            .detalle-contacto {
+  @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+                flex: 0 0 70%; // Establece la flexibilidad del elemento
+                max-width: 70%; // Ancho máximo del elemento
+                height: 100%; // Altura del elemento
+                padding-left: 1rem; // Relleno izquierdo para separar del borde izquierdo
+                border-left: color(&#39;naranja&#39;) 2px solid; // Borde izquierdo naranja
+
+                @media screen and (max-width: 768px) {
+                    flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                    max-width: 100%; // Ancho máximo del elemento en dispositivos de hasta 768px
+                }
+}</code>" data-collapsed=".detalle-info1,
+            .detalle-contacto { ... }"><code>.detalle-info1,
+            .detalle-contacto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para diferentes secciones de información secundaria dentro de la información</p></div></section><section class="main__item container item" id="undefined-css-.detalle-contacto"><h3 class="item__heading"><a class="item__name" href="#css-.detalle-contacto">.detalle-contacto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detalle-contacto {
+  flex: 0 0 30%; // Establece la flexibilidad del elemento
+                max-width: 30%; // Ancho máximo del elemento
+}</code>" data-collapsed=".detalle-contacto { ... }"><code>.detalle-contacto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo para la sección de contacto dentro de la información</p></div></section><section class="main__item container item" id="undefined-css-.opiniones"><h3 class="item__heading"><a class="item__name" href="#css-.opiniones">.opiniones</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.opiniones {
+  @include flex-center(column, 2rem);
+}</code>" data-collapsed=".opiniones { ... }"><code>.opiniones { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para las opiniones</p></div></section><section class="main__item container item" id="undefined-css-.opiniones-section"><h3 class="item__heading"><a class="item__name" href="#css-.opiniones-section">.opiniones-section</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.opiniones-section {
+  @include flex-center;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid color(&#39;blanco&#39;);
+    #{$bg}: color(&#39;gris&#39;);
+}</code>" data-collapsed=".opiniones-section { ... }"><code>.opiniones-section { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sección individual de opiniones</p></div></section><section class="main__item container item" id="undefined-css-.opiniones-grid"><h3 class="item__heading"><a class="item__name" href="#css-.opiniones-grid">.opiniones-grid</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.opiniones-grid {
+  display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}</code>" data-collapsed=".opiniones-grid { ... }"><code>.opiniones-grid { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Grid para las opiniones</p></div></section><section class="main__item container item" id="undefined-css-.opinion-card"><h3 class="item__heading"><a class="item__name" href="#css-.opinion-card">.opinion-card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.opinion-card {
+  width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+    cursor: pointer;
+
+    /// Frente de la tarjeta de opiniones
+    &amp;__front {
+        @include card-properties(#f1f1f1);
+        @include flex-center(row, 5rem);
+    
+        /// Imagen en el frente de la tarjeta de opiniones
+        img { 
+            max-width: 100%;
+            max-height: 100%;
+            transition: opacity 0.6s ease;
+        }
+    }
+    
+    /// Parte trasera de la tarjeta de opiniones
+    &amp;__back {
+        @include card-properties(#fff);
+        padding: 20px;
+        @include flex-center(row, 1rem);
+        text-align: center;
+        transform: rotateY(180deg);
+    }
+
+    /// Efecto de hover para la tarjeta de opiniones
+    @include opinion-card-hover-effect;
+}</code>" data-collapsed=".opinion-card { ... }"><code>.opinion-card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tarjeta individual de opiniones</p></div></section><section class="main__item container item" id="undefined-css-&amp;__front"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__front">&amp;__front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__front {
+  @include card-properties(#f1f1f1);
+        @include flex-center(row, 5rem);
+    
+        /// Imagen en el frente de la tarjeta de opiniones
+        img { 
+            max-width: 100%;
+            max-height: 100%;
+            transition: opacity 0.6s ease;
+        }
+}</code>" data-collapsed="&amp;__front { ... }"><code>&amp;__front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Frente de la tarjeta de opiniones</p></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  max-width: 100%;
+            max-height: 100%;
+            transition: opacity 0.6s ease;
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Imagen en el frente de la tarjeta de opiniones</p></div></section><section class="main__item container item" id="undefined-css-&amp;__back"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__back">&amp;__back</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__back {
+  @include card-properties(#fff);
+        padding: 20px;
+        @include flex-center(row, 1rem);
+        text-align: center;
+        transform: rotateY(180deg);
+}</code>" data-collapsed="&amp;__back { ... }"><code>&amp;__back { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Parte trasera de la tarjeta de opiniones</p></div></section><section class="main__item container item" id="undefined-css-.opinion-card__front"><h3 class="item__heading"><a class="item__name" href="#css-.opinion-card__front">.opinion-card__front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.opinion-card__front {
+  @include flex-center(column, 1rem);
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+    #{$bg}: color(&#39;blanco&#39;);
+    border-radius: 5px;
+    text-align: center;
+}</code>" data-collapsed=".opinion-card__front { ... }"><code>.opinion-card__front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Frente de la tarjeta de opiniones con estilos adicionales</p></div></section><section class="main__item container item" id="undefined-css-.propiedades"><h3 class="item__heading"><a class="item__name" href="#css-.propiedades">.propiedades</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.propiedades {
+  @include flex-center(column, 2rem);
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+    /// Tarjeta individual de propiedad
+    .propiedad{
+        @include flex-center(row, 2rem);
+        width: 80%;
+        padding: 1rem;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 25px;
+        
+        /// Contenedor para los datos de la propiedad
+        .propiedad-datos{
+            width: 50%;
+            @include flexbox(column, space-between, flex-start);
+            gap: 1rem;
+            
+            /// Contenedor para los servicios de la propiedad
+            .services{
+                i{
+                    font-size: font-size(&#39;md&#39;);
+                    color: color(&#39;negro&#39;);
+                }
+            }
+            
+            /// Botón para la propiedad
+            .boton{
+                @include crear-boton(2);
+            }
+        }
+    }
+
+    /// Estilos responsivos para las propiedades
+    @media screen and (max-width: 1095px){
+        gap: 2rem;
+        .propiedad{
+            width: 95%;
+            .propiedad-datos{
+                width: 100%;
+            }
+        }
+    }
+}</code>" data-collapsed=".propiedades { ... }"><code>.propiedades { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para las propiedades</p></div></section><section class="main__item container item" id="undefined-css-.propiedad"><h3 class="item__heading"><a class="item__name" href="#css-.propiedad">.propiedad</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.propiedad {
+  @include flex-center(row, 2rem);
+        width: 80%;
+        padding: 1rem;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 25px;
+        
+        /// Contenedor para los datos de la propiedad
+        .propiedad-datos{
+            width: 50%;
+            @include flexbox(column, space-between, flex-start);
+            gap: 1rem;
+            
+            /// Contenedor para los servicios de la propiedad
+            .services{
+                i{
+                    font-size: font-size(&#39;md&#39;);
+                    color: color(&#39;negro&#39;);
+                }
+            }
+            
+            /// Botón para la propiedad
+            .boton{
+                @include crear-boton(2);
+            }
+        }
+}</code>" data-collapsed=".propiedad { ... }"><code>.propiedad { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tarjeta individual de propiedad</p></div></section><section class="main__item container item" id="undefined-css-.propiedad-datos"><h3 class="item__heading"><a class="item__name" href="#css-.propiedad-datos">.propiedad-datos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.propiedad-datos {
+  width: 50%;
+            @include flexbox(column, space-between, flex-start);
+            gap: 1rem;
+            
+            /// Contenedor para los servicios de la propiedad
+            .services{
+                i{
+                    font-size: font-size(&#39;md&#39;);
+                    color: color(&#39;negro&#39;);
+                }
+            }
+            
+            /// Botón para la propiedad
+            .boton{
+                @include crear-boton(2);
+            }
+}</code>" data-collapsed=".propiedad-datos { ... }"><code>.propiedad-datos { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor para los datos de la propiedad</p></div></section><section class="main__item container item" id="undefined-css-.services"><h3 class="item__heading"><a class="item__name" href="#css-.services">.services</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.services {
+  i{
+                    font-size: font-size(&#39;md&#39;);
+                    color: color(&#39;negro&#39;);
+                }
+}</code>" data-collapsed=".services { ... }"><code>.services { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor para los servicios de la propiedad</p></div></section><section class="main__item container item" id="undefined-css-.boton"><h3 class="item__heading"><a class="item__name" href="#css-.boton">.boton</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.boton {
+  @include crear-boton(2);
+}</code>" data-collapsed=".boton { ... }"><code>.boton { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Botón para la propiedad</p></div></section><section class="main__item container item" id="undefined-css-.publi"><h3 class="item__heading"><a class="item__name" href="#css-.publi">.publi</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.publi {
+  width: 100%;
+
+    /// Imagen de la publicidad
+    .publi-img{
+        width: 100%;
+        height: 70vh;
+        background-image: url(&#39;../assets/img/casas/hero.jpg&#39;);
+        background-size: cover;
+        background-position: center;        
+    }
+}</code>" data-collapsed=".publi { ... }"><code>.publi { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para la publicidad</p></div></section><section class="main__item container item" id="undefined-css-.publi-img"><h3 class="item__heading"><a class="item__name" href="#css-.publi-img">.publi-img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.publi-img {
+  width: 100%;
+        height: 70vh;
+        background-image: url(&#39;../assets/img/casas/hero.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+}</code>" data-collapsed=".publi-img { ... }"><code>.publi-img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Imagen de la publicidad</p></div></section><section class="main__item container item" id="undefined-css-.slider2"><h3 class="item__heading"><a class="item__name" href="#css-.slider2">.slider2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.slider2 {
+  position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+
+    /// Contenedor para las diapositivas
+    .slides2 {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    /// Diapositiva individual
+    .slide2 {
+        width: 100%;
+        flex: 0 0 auto;
+        @include flexbox(row, center, center);
+
+        /// Imagen en la diapositiva
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 50vh;
+        }
+
+        /// Texto en la diapositiva
+        .slider-text {
+            width: 100%;
+            position: absolute;
+            top: 10%;
+            color: color(&#39;blanco&#39;);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    /// Botones de navegación del slider
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        /// Botón para ir a la diapositiva anterior
+        &amp;.prev {
+            left: 10px;
+        }
+
+        /// Botón para ir a la siguiente diapositiva
+        &amp;.next {
+            right: 10px;
+        }
+    }
+
+    /// Animación para el desplazamiento de las diapositivas
+    @keyframes slide2 {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-100%); }
+        50% { transform: translateX(-200%); }
+        75% { transform: translateX(-300%); }
+        100% { transform: translateX(-400%); }
+    }
+}</code>" data-collapsed=".slider2 { ... }"><code>.slider2 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para el slider</p></div></section><section class="main__item container item" id="undefined-css-.slides2"><h3 class="item__heading"><a class="item__name" href="#css-.slides2">.slides2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.slides2 {
+  display: flex;
+        transition: transform 0.5s ease-in-out;
+}</code>" data-collapsed=".slides2 { ... }"><code>.slides2 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor para las diapositivas</p></div></section><section class="main__item container item" id="undefined-css-.slide2"><h3 class="item__heading"><a class="item__name" href="#css-.slide2">.slide2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.slide2 {
+  width: 100%;
+        flex: 0 0 auto;
+        @include flexbox(row, center, center);
+
+        /// Imagen en la diapositiva
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 50vh;
+        }
+
+        /// Texto en la diapositiva
+        .slider-text {
+            width: 100%;
+            position: absolute;
+            top: 10%;
+            color: color(&#39;blanco&#39;);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+}</code>" data-collapsed=".slide2 { ... }"><code>.slide2 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Diapositiva individual</p></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  max-width: 100%;
+            height: auto;
+            max-height: 50vh;
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Imagen en la diapositiva</p></div></section><section class="main__item container item" id="undefined-css-.slider-text"><h3 class="item__heading"><a class="item__name" href="#css-.slider-text">.slider-text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.slider-text {
+  width: 100%;
+            position: absolute;
+            top: 10%;
+            color: color(&#39;blanco&#39;);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+}</code>" data-collapsed=".slider-text { ... }"><code>.slider-text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Texto en la diapositiva</p></div></section><section class="main__item container item" id="undefined-css-button"><h3 class="item__heading"><a class="item__name" href="#css-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>button {
+  position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        /// Botón para ir a la diapositiva anterior
+        &amp;.prev {
+            left: 10px;
+        }
+
+        /// Botón para ir a la siguiente diapositiva
+        &amp;.next {
+            right: 10px;
+        }
+}</code>" data-collapsed="button { ... }"><code>button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Botones de navegación del slider</p></div></section><section class="main__item container item" id="undefined-css-&amp;.prev"><h3 class="item__heading"><a class="item__name" href="#css-&amp;.prev">&amp;.prev</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;.prev {
+  left: 10px;
+}</code>" data-collapsed="&amp;.prev { ... }"><code>&amp;.prev { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Botón para ir a la diapositiva anterior</p></div></section><section class="main__item container item" id="undefined-css-&amp;.next"><h3 class="item__heading"><a class="item__name" href="#css-&amp;.next">&amp;.next</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;.next {
+  right: 10px;
+}</code>" data-collapsed="&amp;.next { ... }"><code>&amp;.next { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Botón para ir a la siguiente diapositiva</p></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Proyecto-sass</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

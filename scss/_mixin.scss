@@ -1,3 +1,6 @@
+/// Mixin para centrar elementos flexibles
+/// @param {string} $direccion - Dirección de la disposición flexbox (por defecto: row)
+/// @param {number} $gap - Espacio entre elementos (por defecto: 0)
 @mixin flex-center($direccion: row, $gap: 0) {
     display: flex;
     justify-content: center;
@@ -6,9 +9,10 @@
     gap: $gap;
 }
 
-
-
-  // Definir mixin para flexbox
+/// Mixin para flexbox
+/// @param {string} $direccion - Dirección de la disposición flexbox
+/// @param {string} $justificar - Forma de justificar los elementos
+/// @param {string} $alinear - Forma de alinear los elementos
 @mixin flexbox($direccion, $justificar, $alinear) {
     display: flex;
     flex-direction: $direccion;
@@ -16,14 +20,24 @@
     align-items: $alinear;
 }
   
-// Definir mixin para grid
+/// Mixin para grid
+/// @param {number} $columnas - Número de columnas del grid
+/// @param {number} $min-ancho - Ancho mínimo de las columnas
+/// @param {number} $max-ancho - Ancho máximo de las columnas
+/// @param {number} $espacio-entre-columnas - Espacio entre columnas
 @mixin gridfooter($columnas, $min-ancho, $max-ancho, $espacio-entre-columnas) {
     display: grid;
     grid-template-columns: repeat($columnas, minmax($min-ancho, $max-ancho));
     grid-column-gap: $espacio-entre-columnas;
 }
 
-@mixin gridGalery($columnas, $max-ancho, $filas,$max-ancho-filas ,$espacio-entre-columnas) {
+/// Mixin para grid de galería
+/// @param {number} $columnas - Número de columnas del grid
+/// @param {number} $max-ancho - Ancho máximo de las columnas
+/// @param {number} $filas - Número de filas del grid
+/// @param {number} $max-ancho-filas - Ancho máximo de las filas
+/// @param {number} $espacio-entre-columnas - Espacio entre columnas
+@mixin gridGalery($columnas, $max-ancho, $filas, $max-ancho-filas, $espacio-entre-columnas) {
     display: grid;
     grid-template-columns: repeat($columnas, minmax(0, $max-ancho));
     grid-template-rows: repeat($filas, minmax(0, $max-ancho-filas));
@@ -31,12 +45,18 @@
     padding: $espacio-entre-columnas;
 }
 
-// Mixin para las posiciones de los elementos de la galería
+/// Mixin para definir las posiciones de los elementos de la galería
+/// @param {number} $row - Fila de inicio del elemento
+/// @param {number} $row-span - Número de filas que ocupa el elemento
+/// @param {number} $column - Columna de inicio del elemento
+/// @param {number} $column-span - Número de columnas que ocupa el elemento
 @mixin gallery-item($row, $row-span, $column, $column-span) {
     grid-row: $row / span $row-span;
     grid-column: $column / span $column-span;
 }
   
+/// Mixin para definir las propiedades de las tarjetas
+/// @param {color} $bg-color - Color de fondo de la tarjeta
 @mixin card-properties($bg-color) {
     width: 100%;
     height: 100%;
@@ -46,9 +66,8 @@
     background: $bg-color;
 }
   
-// Mixin para definir el efecto de volteo al hacer hover
+/// Mixin para definir el efecto de volteo al hacer hover en las tarjetas de opinión
 @mixin opinion-card-hover-effect {
-  
     &:hover {
         .opinion-card__front {
           transform: rotateY(-180deg);
@@ -60,18 +79,18 @@
     }
 }
 
-
-@mixin hover-animation{
+/// Mixin para la animación de hover
+@mixin hover-animation {
     transition: all 0.5s ease-in-out;
     color: color('blanco');
     border-bottom: color('blanco') 2px solid;
     border-top: color('blanco') 2px solid;
-
     animation: menosmas 0.5s ease-in-out ;
     cursor: pointer;
-
 }
 
+/// Mixin para crear botones
+/// @param {number} $type - Tipo de botón (1 o 2)
 @mixin crear-boton($type) {
     @if $type == 1 {
         #{$bg}: color('blanco');
@@ -108,30 +127,30 @@
     }
 }
 
-
-// Definir función para calcular espaciado
+/// Función para calcular el espaciado
+/// @param {number} $numero-columnas - Número de columnas
+/// @param {number} $ancho-columna - Ancho de cada columna
+/// @param {number} $espacio-entre-columnas - Espacio entre columnas
 @function calcular-espaciado($numero-columnas, $ancho-columna, $espacio-entre-columnas) {
     @return ($numero-columnas * $ancho-columna) + (($numero-columnas - 1) * $espacio-entre-columnas);
-  }
-  
-
-  
-
-@keyframes menosmas{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 100%;
-    }
-
 }
 
-@keyframes flash{
-    50%{
+/// Animación menosmas
+@keyframes menosmas {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/// Animación flash
+@keyframes flash {
+    50% {
       scale: 1;
     }
-    25% ,75%{
+    25%, 75% {
         scale: 0.9;
     }
 }

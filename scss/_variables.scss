@@ -1,8 +1,13 @@
+/// Importa la fuente de Google Fonts utilizada en el proyecto
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/// Define la familia de fuentes principal utilizada en el proyecto
 $font-family: 'Karla', sans-serif;
-$bg : background-color;
 
+/// Variable para el color de fondo, utilizada como atajo para background-color
+$bg: background-color;
+
+/// Paleta de colores utilizada en el proyecto
 $colors: (
     negro: rgb(20, 20, 20),
     gris: rgb(189, 189, 189),
@@ -11,10 +16,13 @@ $colors: (
     menu: #000000cb,
 );
 
-@function color ($color-name) {
+/// Función para obtener el valor de un color de la paleta
+/// @param {string} $color-name - Nombre del color a obtener
+@function color($color-name) {
     @return map-get($colors, $color-name);
 }
 
+/// Tamaños de fuente utilizados en el proyecto
 $font-sizes: (
     xs: 1rem,
     sm: 1.3rem,
@@ -24,18 +32,24 @@ $font-sizes: (
     xxl: 2.5rem,
 );
 
-@function font-size ($size-name) {
+/// Función para obtener el tamaño de fuente correspondiente
+/// @param {string} $size-name - Nombre del tamaño de fuente a obtener
+@function font-size($size-name) {
     @return map-get($font-sizes, $size-name);
 }
 
+/// Pesos de fuente utilizados en el proyecto
 $font-weight: (
     light: 300,
     regular: 400,
     bold: 700,
 );
 
-@function font-weight ($weight-name) {
+/// Función para obtener el peso de fuente correspondiente
+/// @param {string} $weight-name - Nombre del peso de fuente a obtener
+@function font-weight($weight-name) {
     @return map-get($font-weight, $weight-name);
 }
 
+/// Altura del navbar en el proyecto
 $navbar-height: 80px;

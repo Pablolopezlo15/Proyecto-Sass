@@ -1,73 +1,71 @@
-
-  // Estilos para el footer
-  footer {
+// Estilos para el footer
+footer {
     #{$bg}: color('negro');
     color: color('blanco');
     padding: 20px;
     margin-top: 2rem;
-  
+
     .footer-container {
-      @include gridfooter(4, 100px, 1fr, 20px);
-      padding: 2rem 10rem 2rem 10rem;
-      @media screen and (max-width: 768px) {
-        @include gridfooter(2, 100px, 1fr, 20px);
-      }
-  
-      @media screen and (max-width: 480px) {
-        @include gridfooter(1, 100px, 1fr, 20px);
-      }
+        @include gridfooter(4, 100px, 1fr, 20px);
+        padding: 2rem 10rem 2rem 10rem;
+        @media screen and (max-width: 768px) {
+            @include gridfooter(2, 100px, 1fr, 20px);
+        }
+
+        @media screen and (max-width: 480px) {
+            @include gridfooter(1, 100px, 1fr, 20px);
+        }
     }
-  
+
     .footer-info {
-      padding: 10px;
-  
-      h4 {
-        margin-bottom: 10px;
-      }
-  
-      .footer-text {
-        ul {
-          list-style: none;
-          padding: 0;
-  
-          li {
-            margin-bottom: 5px;
-  
-            a {
-              color: #fff;
-              text-decoration: none;
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-          }
+        padding: 10px;
+
+        h4 {
+            margin-bottom: 10px;
         }
-      }
+
+        .footer-text {
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 5px;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
     }
-  
+
     .metodos-rrss {
-      @include flexbox(column, space-between, center);
-  
-      .metodos,
-      .rrss {
-        ul {
-          list-style: none;
-          padding: 0;
-          @include flexbox(row, center, center);
-          li {
-            margin-right: 10px;
-          }
-  
-          a {
-            color: color('blanco');
-            text-decoration: none;
-  
-            i {
-              font-size: font-size('xl');
+        @include flexbox(column, space-between, center);
+
+        .metodos,
+        .rrss {
+            ul {
+                list-style: none;
+                padding: 0;
+                @include flexbox(row, center, center);
+                li {
+                    margin-right: 10px;
+                }
+
+                a {
+                    color: color('blanco');
+                    text-decoration: none;
+
+                    i {
+                        font-size: font-size('xl');
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
-  
+}

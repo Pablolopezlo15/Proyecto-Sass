@@ -1,71 +1,71 @@
+/// Estilo para el contenedor "detalle"
 .detalle {
     padding: 50px 0;
 
+    /// Estilo para el subcontenedor dentro de "detalle"
     &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 4rem;
+        @include flexbox(column, space-between, center); // Utiliza el mixin para flexbox con dirección columna, justificado espacio-entre y alineado al centro
+        gap: 4rem; // Espacio entre elementos dentro del contenedor
 
+        /// Estilo para la sección de imágenes dentro del contenedor
         .detalle-img {
-            display: flex;
-            flex-direction: column;
-            flex: 0 0 60%;
-            width: 60%;
-            min-width: 300px;
+            @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            width: 60%; // Ancho del elemento
+            min-width: 300px; // Ancho mínimo del elemento
 
             img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
+                width: 100%; // Ancho completo de la imagen
+                height: auto; // Altura automática de la imagen
+                border-radius: 8px; // Borde redondeado de la imagen
             }
 
             @media screen and (max-width: 768px) {
-                flex: 0 0 100%;
-                width: 100%;
-
+                flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                width: 100%; // Ancho completo del elemento en dispositivos de hasta 768px
             }
 
+            /// Estilo para las imágenes adicionales dentro de la sección de imágenes
             .detalle-masimagenes {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 1rem;
-                margin-top: 1rem;
+                @include flexbox(row, flex-start, center); // Utiliza el mixin para flexbox con dirección fila, justificado al inicio y centrado verticalmente
+                flex-wrap: wrap; // Permite que los elementos se envuelvan en varias líneas si es necesario
+                gap: 1rem; // Espacio entre las imágenes
+                margin-top: 1rem; // Margen superior para separar del contenido superior
 
                 img {
-                    width: 150px;
-                    height: 100px;
-                    border-radius: 8px;
+                    width: 150px; // Ancho de las imágenes adicionales
+                    height: 100px; // Altura de las imágenes adicionales
+                    border-radius: 8px; // Borde redondeado de las imágenes adicionales
 
                     &:hover {
-                        transition: 0.15s ease;
-                        border: color('naranja') 5px solid;
-                        cursor: pointer;
+                        transition: 0.15s ease; // Transición suave al hacer hover
+                        border: color('naranja') 5px solid; // Borde naranja al hacer hover
+                        cursor: pointer; // Cambia el cursor al pasar sobre la imagen
                     }
                 }
 
                 @media screen and (max-width: 768px) {
-                    justify-content: center;
-                    align-items: center;
-                    
+                    justify-content: center; // Centra horizontalmente las imágenes adicionales en dispositivos de hasta 768px
+                    align-items: center; // Centra verticalmente las imágenes adicionales en dispositivos de hasta 768px
                 }
             }
         }
 
+        /// Estilo para la información dentro del contenedor
         .detalle-info {
-            display: flex;
-            gap: 2rem;
-            flex: 0 0 60%;
-            max-width: 60%;
-            height: 100%;
+            display: flex; // Utiliza flexbox para el diseño de la información
+            gap: 2rem; // Espacio entre elementos dentro de la información
+            flex: 0 0 60%; // Establece la flexibilidad del elemento
+            max-width: 60%; // Ancho máximo del elemento
+            height: 100%; // Altura del elemento
 
             @media screen and (max-width: 768px) {
-                flex: 0 0 90%;
-                flex-direction: column;
-                max-width: 90%;
+                flex: 0 0 90%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                flex-direction: column; // Cambia la dirección del elemento a columna en dispositivos de hasta 768px
+                max-width: 90%; // Ancho máximo del elemento en dispositivos de hasta 768px
             }
 
+            /// Estilo para diferentes secciones de información dentro de la información
             .detalle-descripcion,
             .detalle-amenidades,
             .detalle-ubicacion,
@@ -73,57 +73,59 @@
             .detalle-reservar,
             .detalle-contacto {
                 h3 {
-                    font-size: font-size('md');
-                    margin-bottom: 10px;
+                    font-size: font-size('md'); // Tamaño de fuente para los títulos
+                    margin-bottom: 10px; // Margen inferior para separar del contenido siguiente
                 }
 
                 p {
-                    font-size: font-size('xs');
+                    font-size: font-size('xs'); // Tamaño de fuente para los párrafos
                 }
             }
 
+            /// Estilo para la sección de amenidades dentro de la información
             .detalle-amenidades {
                 ul {
-                    list-style: none;
-                    padding: 0;
+                    list-style: none; // Elimina los puntos de la lista
+                    padding: 0; // Elimina el relleno de la lista
 
                     li {
-                        font-size: 16px;
-                        margin-bottom: 5px;
+                        font-size: 16px; // Tamaño de fuente para los elementos de la lista
+                        margin-bottom: 5px; // Margen inferior para separar los elementos de la lista
 
                         i {
-                            margin-right: 5px;
+                            margin-right: 5px; // Margen derecho para separar el icono del texto
                         }
                     }
                 }
             }
 
+            /// Estilo para la sección de reservas dentro de la información
             .detalle-reservar {
                 .boton{
-                    @include crear-boton(1);
-
+                    @include crear-boton(1); // Utiliza el mixin para crear un botón de estilo 1
                 }
             }
 
+            /// Estilo para diferentes secciones de información secundaria dentro de la información
             .detalle-info1,
             .detalle-contacto {
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 70%;
-                max-width: 70%;
-                height: 100%;
-                padding-left: 1rem;
-                border-left: color('naranja') 2px solid;
+                @include flexbox(column, flex-start, flex-start); // Utiliza el mixin para flexbox con dirección columna, justificado al inicio y alineado al inicio
+                flex: 0 0 70%; // Establece la flexibilidad del elemento
+                max-width: 70%; // Ancho máximo del elemento
+                height: 100%; // Altura del elemento
+                padding-left: 1rem; // Relleno izquierdo para separar del borde izquierdo
+                border-left: color('naranja') 2px solid; // Borde izquierdo naranja
 
                 @media screen and (max-width: 768px) {
-                    flex: 0 0 100%;
-                    max-width: 100%;
+                    flex: 0 0 100%; // Cambia la flexibilidad del elemento en dispositivos de hasta 768px
+                    max-width: 100%; // Ancho máximo del elemento en dispositivos de hasta 768px
                 }
             }
 
+            /// Estilo para la sección de contacto dentro de la información
             .detalle-contacto {
-                flex: 0 0 30%;
-                max-width: 30%;
+                flex: 0 0 30%; // Establece la flexibilidad del elemento
+                max-width: 30%; // Ancho máximo del elemento
             }
         } 
     }

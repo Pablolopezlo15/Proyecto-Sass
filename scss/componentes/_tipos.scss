@@ -1,40 +1,37 @@
 .section-tipos{
-  @include flex-center(column, 2rem);
+    @include flex-center(column, 2rem);
 
-  #{$bg}: color('secundary');
-  text-align: center;
+    #{$bg}: color('secundary');
+    text-align: center;
 
-
-  .galeria-tipos{
-    @include flex-center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 1rem;
-  
-    .card-tipos{
-      width: calc(75% /4);
-      min-width: 300px;
-      height: 400px;
-      
-      img{
+    .galeria-tipos{
+        @include flex-center;
+        flex-wrap: wrap;
         width: 100%;
-        height: 350px;
-        object-fit: cover;
-      }
-    }
-    &:hover .card-tipos {
-      transition: all 0.5s ease-in-out;
-      transform: scale(0.9);
-      filter: brightness(0.5) saturate(0) contrast(1.2) blur(5px);
-      cursor: pointer;
-    }
+        gap: 1rem;
   
-    // Cuando se pasa el mouse sobre una tarjeta específica, se revierten los estilos de desenfoque
-    .card-tipos:hover {
-      transform: scale(1.1);
-      filter: brightness(1) saturate(1) contrast(1) blur(0);
+        .card-tipos{
+            width: calc(75% /4);
+            min-width: 300px;
+            height: 400px;
+      
+            img{
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+        &:hover .card-tipos {
+            transition: all 0.5s ease-in-out;
+            transform: scale(0.9);
+            filter: brightness(0.5) saturate(0) contrast(1.2) blur(5px);
+            cursor: pointer;
+        }
+  
+        // Cuando se pasa el mouse sobre una tarjeta específica, se revierten los estilos de desenfoque
+        .card-tipos:hover {
+            transform: scale(1.1);
+            filter: brightness(1) saturate(1) contrast(1) blur(0);
+        }
     }
-   
-  }
-
 }

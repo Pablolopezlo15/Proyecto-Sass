@@ -1,9 +1,11 @@
+/// Contenedor principal para las propiedades
 .propiedades{
     @include flex-center(column, 2rem);
     width: 100%;
     gap: 2rem;
     margin-top: 2rem;
     
+    /// Tarjeta individual de propiedad
     .propiedad{
         @include flex-center(row, 2rem);
         width: 80%;
@@ -11,26 +13,29 @@
         flex-wrap: wrap;
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
         border-radius: 25px;
+        
+        /// Contenedor para los datos de la propiedad
         .propiedad-datos{
             width: 50%;
             @include flexbox(column, space-between, flex-start);
             gap: 1rem;
             
+            /// Contenedor para los servicios de la propiedad
             .services{
                 i{
                     font-size: font-size('md');
                     color: color('negro');
                 }
-            
-
             }
+            
+            /// Botón para la propiedad
             .boton{
                 @include crear-boton(2);
             }
-            
         }
     }
 
+    /// Estilos responsivos para las propiedades
     @media screen and (max-width: 1095px){
         gap: 2rem;
         .propiedad{

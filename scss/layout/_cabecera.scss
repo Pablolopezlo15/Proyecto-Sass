@@ -1,6 +1,6 @@
+// Estilos para el header
 header {
     height: 70vh; 
-
     nav {
         padding: 1rem;
         height: 15vh;
@@ -55,5 +55,5 @@ header {
 
 .header-detalle {
     #{$bg}: color('menu');
-    height: 12vh;
+    height: 15vh;
 }

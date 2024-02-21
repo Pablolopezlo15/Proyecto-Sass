@@ -1,25 +1,25 @@
 .hero {
+    // Aplicar estilos de centrado flexbox
     @include flex-center(row, 2.5rem);
     flex-wrap: wrap;
     max-width: 100%;
     min-height: 15vh;
     padding: 20px;
-    #{$bg}: color('gris');
-    color: color('negro');
-    // border-bottom: 2px solid color('naranja');
-    border-top: 2px solid color('naranja');
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: color('gris'); 
+    color: color('negro'); 
+    border-top: 2px solid color('naranja'); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 
-    div{
+    div {
         width: 200px;
         text-align: center;
     }
-    
+
     p { 
         margin: 0;   
     }
 
-    input{
+    input {
         width: 100%;
     }
 
@@ -28,7 +28,7 @@
         padding: 8px;
         border: none;
         border-bottom: 2px solid color('blanco');
-        #{$bg}: color('gris');
+        background-color: color('gris');
         &:focus {
             border-color: color('naranja');
             outline: none;
@@ -40,7 +40,7 @@
         padding: 8px;
         border: none;
         border-bottom: 2px solid color('blanco');
-        #{$bg}: color('gris');
+        background-color: color('gris');
         &:focus {
             border-color: color('naranja');
             outline: none;
@@ -55,17 +55,18 @@
         padding: 8px;
         border: none;
         border-bottom: 2px solid color('blanco');
-        #{$bg}: color('gris');
-
+        background-color: color('gris');
         &:focus {
             border-color: color('naranja');
             outline: none;
         }
     }
-    .boton-buscar{
+
+    .boton-buscar {
         margin-top: 1.5rem;
-        .boton{
-            @include crear-boton(1)
+        .boton {
+            /* Utiliza el mixin para crear un botón de estilo 1 */
+            @include crear-boton(1); 
         }
     }
 }
