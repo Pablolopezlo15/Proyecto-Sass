@@ -43,7 +43,8 @@ footer {
   footer .footer-container {
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
-    grid-column-gap: 20px; }
+    grid-column-gap: 20px;
+    padding: 2rem 10rem 2rem 10rem; }
     @media screen and (max-width: 768px) {
       footer .footer-container {
         display: grid;
@@ -93,7 +94,7 @@ footer {
           font-size: 2rem; }
 
 header {
-  height: 85vh; }
+  height: 70vh; }
   header nav {
     padding: 1rem;
     height: 15vh; }
@@ -145,7 +146,6 @@ header {
   padding: 20px;
   background-color: #bdbdbd;
   color: #141414;
-  border-bottom: 2px solid #c05000;
   border-top: 2px solid #c05000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .hero div {
@@ -202,7 +202,7 @@ header {
   width: 100%; }
   .publi .publi-img {
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     background-image: url("../assets/img/casas/hero.jpg");
     background-size: cover;
     background-position: center; }
