@@ -129,7 +129,7 @@ header {
   backdrop-filter: blur(5px);
   background-color: #000000cb;
   border-bottom: 2px solid #c05000;
-  height: 8vh; }
+  height: 10vh; }
 
 .header-detalle {
   background-color: #000000cb;
@@ -201,7 +201,8 @@ header {
         color: #ffffff; }
 
 .publi {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2rem; }
   .publi .publi-img {
     width: 100%;
     height: 80vh;
@@ -524,7 +525,7 @@ header {
   gap: 2rem;
   width: 100%;
   gap: 2rem;
-  margin-top: 2rem; }
+  margin-top: 8rem; }
   .propiedades .propiedad {
     display: flex;
     justify-content: center;
