@@ -1,26 +1,20 @@
-// Definir función para calcular espaciado
-@function calcular-espaciado($numero-columnas, $ancho-columna, $espacio-entre-columnas) {
-    @return ($numero-columnas * $ancho-columna) + (($numero-columnas - 1) * $espacio-entre-columnas);
-  }
-  
 
-  
   // Estilos para el footer
   footer {
-    background-color: color('primary');
-    color: color('tertiary');
+    #{$bg}: color('negro');
+    color: color('blanco');
     padding: 20px;
     margin-top: 2rem;
   
     .footer-container {
-      @include grid(4, 100px, 1fr, 20px);
+      @include gridfooter(4, 100px, 1fr, 20px);
   
       @media screen and (max-width: 768px) {
-        @include grid(2, 100px, 1fr, 20px);
+        @include gridfooter(2, 100px, 1fr, 20px);
       }
   
       @media screen and (max-width: 480px) {
-        @include grid(1, 100px, 1fr, 20px);
+        @include gridfooter(1, 100px, 1fr, 20px);
       }
     }
   
@@ -52,21 +46,20 @@
     }
   
     .metodos-rrss {
-      @include flexbox-rrss(column, space-between, center);
+      @include flexbox(column, space-between, center);
   
       .metodos,
       .rrss {
         ul {
           list-style: none;
           padding: 0;
-          display: flex;
-  
+          @include flexbox(row, center, center);
           li {
             margin-right: 10px;
           }
   
           a {
-            color: #fff;
+            color: color('blanco');
             text-decoration: none;
   
             i {

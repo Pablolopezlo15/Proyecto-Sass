@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 $font-family: 'Karla', sans-serif;
+$bg : background-color;
 
 $colors: (
-    primary: rgb(20, 20, 20),
-    secondary: rgb(189, 189, 189),
-    tertiary: #ffffff,
-    quaternary: #c05000,
+    negro: rgb(20, 20, 20),
+    gris: rgb(189, 189, 189),
+    blanco: #ffffff,
+    naranja: #c05000,
     menu: #000000cb,
 );
 

@@ -1,50 +1,71 @@
 .hero {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  min-height: 15vh;
-  padding: 20px;
-  background-color: color('secondary');
-  color: color('primary');
-  border-bottom: 2px solid color('quaternary');
-  border-top: 2px solid color('quaternary');
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    @include flex-center(row, 2.5rem);
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 15vh;
+    padding: 20px;
+    #{$bg}: color('gris');
+    color: color('negro');
+    border-bottom: 2px solid color('naranja');
+    border-top: 2px solid color('naranja');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
+    div{
+        width: 200px;
+        text-align: center;
+    }
+    
+    p { 
+        margin: 0;   
+    }
 
-  p {
-      margin: 0;
-  }
+    input{
+        width: 100%;
+    }
 
-  input[type="date"] {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-  }
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-bottom: 2px solid color('blanco');
+        #{$bg}: color('gris');
+        &:focus {
+            border-color: color('naranja');
+            outline: none;
+        }
+    }
 
-  select {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-  }
+    select {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-bottom: 2px solid color('blanco');
+        #{$bg}: color('gris');
+        &:focus {
+            border-color: color('naranja');
+            outline: none;
+        }
+    }
 
-  label {
-      margin-right: 10px;
-  }
+    label {
+        margin-right: 10px;
+    }
 
-  input[type="text"] {
-      width: calc(100% - 60px);
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    input[type="text"] {
+        padding: 8px;
+        border: none;
+        border-bottom: 2px solid color('blanco');
+        #{$bg}: color('gris');
 
-      &:focus {
-          border-color: #007bff;
-          outline: none;
-      }
-  }
+        &:focus {
+            border-color: color('naranja');
+            outline: none;
+        }
+    }
+    .boton-buscar{
+        margin-top: 1.5rem;
+        .boton{
+            @include crear-boton(1)
+        }
+    }
 }

@@ -12,7 +12,7 @@
             display: flex;
             flex-direction: column;
             flex: 0 0 60%;
-            max-width: 60%;
+            width: 60%;
             min-width: 300px;
 
             img {
@@ -23,7 +23,8 @@
 
             @media screen and (max-width: 768px) {
                 flex: 0 0 100%;
-                max-width: 100%;
+                width: 100%;
+
             }
 
             .detalle-masimagenes {
@@ -39,7 +40,7 @@
 
                     &:hover {
                         transition: 0.15s ease;
-                        border: color('quaternary') 5px solid;
+                        border: color('naranja') 5px solid;
                         cursor: pointer;
                     }
                 }
@@ -47,6 +48,7 @@
                 @media screen and (max-width: 768px) {
                     justify-content: center;
                     align-items: center;
+                    
                 }
             }
         }
@@ -97,19 +99,9 @@
             }
 
             .detalle-reservar {
-                button {
-                    font-size: font-size('md');
-                    padding: 10px 20px;
-                    background-color: #007bff;
-                    color: #fff;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    transition: background-color 0.3s ease;
+                .boton{
+                    @include crear-boton(1);
 
-                    &:hover {
-                        background-color: #0056b3;
-                    }
                 }
             }
 
@@ -121,7 +113,7 @@
                 max-width: 70%;
                 height: 100%;
                 padding-left: 1rem;
-                border-left: color('quaternary') 2px solid;
+                border-left: color('naranja') 2px solid;
 
                 @media screen and (max-width: 768px) {
                     flex: 0 0 100%;

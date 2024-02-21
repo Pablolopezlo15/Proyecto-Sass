@@ -6,8 +6,8 @@
     width: 100%;
     margin-bottom: 2rem;
     padding: 1rem;
-    border: 1px solid #e1e1e1;
-    background-color: color('secondary');
+    border: 1px solid color('blanco');
+    #{$bg}: color('gris');
 
 }
 .opiniones-grid{
@@ -19,12 +19,41 @@
     justify-content: center;
     align-items: center;
 }
+.opinion-card{
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+    cursor: pointer;
 
+    &__front {
+        @include card-properties(#f1f1f1);
+        @include flex-center(row, 5rem);
+    
+        img { 
+            max-width: 100%;
+            max-height: 100%;
+            transition: opacity 0.6s ease;
+        }
+    }
+    
+    &__back {
+        @include card-properties(#fff);
+        padding: 20px;
+        @include flex-center(row, 1rem);
+        text-align: center;
+        transform: rotateY(180deg);
+    }
+
+
+      @include opinion-card-hover-effect;
+
+}
 .opinion-card__front{
     @include flex-center(column, 1rem);
     padding: 1rem;
     border: 1px solid #e1e1e1;
-    background-color: color('tertiary');
+    #{$bg}: color('blanco');
     border-radius: 5px;
     text-align: center;
 }

@@ -1,8 +1,6 @@
 .propiedades{
+    @include flex-center(column, 2rem);
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
     margin-top: 2rem;
     
@@ -15,16 +13,21 @@
         border-radius: 25px;
         .propiedad-datos{
             width: 50%;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
+            @include flexbox(column, space-between, flex-start);
             gap: 1rem;
+            
             .services{
                 i{
                     font-size: font-size('md');
-                    color: color('primary');
+                    color: color('negro');
                 }
+            
+
             }
+            .boton{
+                @include crear-boton(2);
+            }
+            
         }
     }
 

@@ -1,22 +1,22 @@
-/// Header styles
 header {
-    height: 85vh; // Header height
+    height: 85vh; 
 
     nav {
         padding: 1rem;
-        height: 15vh; // Navigation styles
+        height: 15vh;
 
         a.navbar-brand {
-            color: color('quaternary'); // Navbar brand styles
+            color: color('naranja');
 
             img {
-                width: 64px; // Navbar brand image styles
+                width: 64px;
             }
         }
 
         a.nav-link {
-            color: color('quaternary');
-            font-size: font-size('sm'); // Navigation link styles
+            color: color('naranja');
+            font-size: font-size('sm');
+            padding: 0;
 
             &:hover {
                 @include hover-animation;
@@ -24,10 +24,10 @@ header {
         }
 
         .navbar-toggler {
-            border: color('quaternary') 2px solid; // Navbar toggler styles
+            border: color('naranja') 2px solid;
 
             .navbar-toggler-icon {
-                color: color('quaternary');
+                color: color('naranja');
             }
         }
 
@@ -46,16 +46,14 @@ header {
 .bg-scroll {
     background-attachment: fixed;
     transition: 0.2s;
+    backdrop-filter: blur(5px);
     background-color: color('menu');
-    border-bottom: 5px solid color('quaternary');
-    height: 12vh; // Background scroll styles
+    border-bottom: 2px solid color('naranja');
+    height: 8vh;
 }
 
 
-
-
-
 .header-detalle {
-    background-color: color('menu');
+    #{$bg}: color('menu');
     height: 12vh;
 }

@@ -1,17 +1,19 @@
 .section-tipos{
   @include flex-center(column, 2rem);
 
-  background-color: color('secundary');
+  #{$bg}: color('secundary');
   text-align: center;
 
 
   .galeria-tipos{
-    @include flex-center-wrap;
+    @include flex-center;
+    flex-wrap: wrap;
     width: 100%;
     gap: 1rem;
   
     .card-tipos{
-      width: 300px;
+      width: calc(75% /4);
+      min-width: 300px;
       height: 400px;
       
       img{
@@ -22,7 +24,7 @@
     }
     &:hover .card-tipos {
       transition: all 0.5s ease-in-out;
-      transform: scale(0.8);
+      transform: scale(0.9);
       filter: brightness(0.5) saturate(0) contrast(1.2) blur(5px);
       cursor: pointer;
     }
