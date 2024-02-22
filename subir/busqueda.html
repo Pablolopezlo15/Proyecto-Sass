@@ -27,43 +27,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+    <!-- Inicio de la cabecera -->
     <header>
 
+        <!-- Inicio Menú de navegación -->
         <nav class="navbar navbar-expand-lg bg-body-blanco fixed-top" id="nav">
             <div class="container-fluid">
+
                 <a class="navbar-brand" href="index.html"><img src="./assets/img/pllogo.png" alt=""></a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><i class="ri-menu-line"></i></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="detalle.html">Casa</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="busqueda.html">Catálogo</a>
                         </li>
                     </ul>
+                    
                 </div>
             </div>
         </nav>
+        <!-- Fin Menú de navegación -->
 
+        <!-- Inicio Sección del header con la foto -->
         <section class="publi">
+
             <div class="publi-container">
                 <div class="publi-img">
-                </div>
+            </div>
+
         </section>
+        <!-- Fin Sección del header con la foto -->
 
     </header>
+    <!-- Fin de la cabecera -->
 
+    <!-- Inicio del contenedor principal -->
     <main>
 
+        <!-- Sección con las villas disponibles -->
         <section class="propiedades">
             <h2>Propiedades Disponibles</h2>
+
+            <!-- Propiedad 1 -->
             <article class="propiedad">
+
+                <!-- Slider de las imagenes propiedad -->
                 <div class="propiedad-img">
                     <div class="slider-propiedades">
                         <input class="input-slider" checked type="radio" name="s" style="background-image: url('./assets/img/casas/lujo.jpg');" title="Vista General">
@@ -71,6 +93,8 @@
                         <input class="input-slider" type="radio" name="s" style="background-image: url('./assets/img/galeria/gal-12.jpeg');" title="Salon Planta Baja">
                     </div>
                 </div>
+
+                <!-- Datos de la propiedad -->
                 <div class="propiedad-datos">
                     <div>
                         <i class="ri-star-fill"></i>
@@ -94,16 +118,21 @@
                             <i class="ri-charging-pile-fill"></i>
                             <i class="fa-solid fa-water-ladder"></i>
                         </div>
+
+                        <!-- Botón para ver la propiedad -->
                         <div class="d-flex align-items-center">
                             <a href="detalle.html"><button class="boton">Ver Propiedad</button></a>
                         </div>
 
                     </div>
+
                 </div>
             </article>
 
-
+            <!-- Propiedad 2 -->
             <article class="propiedad">
+
+                <!-- Slider de las imagenes propiedad -->
                 <div class="propiedad-img">
                     <div class="slider-propiedades">
                         <input class="input-slider" checked type="radio" name="a" style="background-image: url('./assets/img/casas/casa1.jpg');" title="Salón">
@@ -111,6 +140,8 @@
                         <input class="input-slider" type="radio" name="a" style="background-image: url('./assets/img/galeria/gal-9.jpeg');" title="Cocina - Comedor">
                     </div>
                 </div>
+
+                <!-- Datos de la propiedad -->
                 <div class="propiedad-datos">
                     <div>
                         <i class="ri-star-fill"></i>
@@ -133,6 +164,8 @@
                             <i class="ri-parking-box-fill"></i>
                             <i class="fa-solid fa-water-ladder"></i>
                         </div>
+
+                        <!-- Botón para ver la propiedad -->
                         <div class="d-flex align-items-center">
                             <a href="detalle.html"><button class="boton">Ver Propiedad</button></a>
                         </div>
@@ -140,7 +173,11 @@
                     </div>
                 </div>
             </article>
+
+            <!-- Propiedad 3 -->
             <article class="propiedad">
+
+                <!-- Slider de las imagenes propiedad -->
                 <div class="propiedad-img">
                     <div class="slider-propiedades">
                         <input class="input-slider" checked type="radio" name="b" style="background-image: url('./assets/img/galeria/gal-1.jpeg');" title="Vista General">
@@ -148,6 +185,8 @@
                         <input class="input-slider" type="radio" name="b" style="background-image: url('./assets/img/galeria/gal-8.jpeg');" title="Salón Planta 1">
                     </div>
                 </div>
+
+                <!-- Datos de la propiedad -->
                 <div class="propiedad-datos">
                     <div>
                         <i class="ri-star-fill"></i>
@@ -170,6 +209,8 @@
                             <i class="fa-solid fa-water-ladder"></i>
                             <i class="fas fa-kit-medical"></i>
                         </div>
+
+                        <!-- Botón para ver la propiedad -->
                         <div class="d-flex align-items-center contenedor-boton">
                             <a href="detalle.html"><button class="boton">Ver Propiedad</button></a>
                         </div>
@@ -177,12 +218,14 @@
                     </div>
                 </div>
             </article>
+
         </section>
-
-
+        <!-- Fin de la sección con las villas disponibles -->
 
     </main>
+    <!-- Fin del contenedor principal -->
 
+    <!-- Inicio del footer -->
     <footer>
         <div class="footer-container">  
             <div class="ayuda footer-info">
@@ -241,7 +284,9 @@
 
         </div>
     </footer>
+    <!-- Fin del footer -->
 
+    <!-- Scripts js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 

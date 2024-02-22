@@ -26,39 +26,61 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+
+    <!-- Inicio de la cabecera -->
     <header>
 
+        <!-- Inicio Menú de navegación -->
         <nav class="navbar navbar-expand-lg bg-body-blanco fixed-top" id="nav">
             <div class="container-fluid">
+
                 <a class="navbar-brand" href="index.html"><img src="./assets/img/pllogo.png" alt=""></a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><i class="ri-menu-line"></i></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="detalle.html">Casa</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="busqueda.html">Catálogo</a>
                         </li>
                     </ul>
+                    
                 </div>
             </div>
         </nav>
+        <!-- Fin Menú de navegación -->
+
+        <!-- Inicio Sección del header con la foto -->
         <section class="publi">
+
             <div class="publi-container">
                 <div class="publi-img">
-                </div>
+            </div>
+
         </section>
+        <!-- Fin Sección del header con la foto -->
 
     </header>
+    <!-- Fin de la cabecera -->
+
+    <!-- Inicio del contenido principal -->
     <main>
     
-        <section class="hero">
+        <!-- Sección búsqueda -->
+        <section class="buscar">
+
+            <!-- Temperatura -->
             <div>
                 <div>
                     <i class="ri-sun-line"></i>                
@@ -67,6 +89,8 @@
                     <p>21 ºC</p>
                 </div>
             </div>
+
+            <!-- Día llegada -->
             <div class="llegada">
                 <div>
                     <p>Llegada</p>
@@ -75,6 +99,8 @@
                     <input type="date">
                 </div>
             </div>
+
+            <!-- Día salida -->
             <div class="salida">
                 <div>
                     <p>Salida</p>
@@ -83,10 +109,14 @@
                     <input type="date">
                 </div>
             </div>
+
+            <!-- Número de habitaciones -->
             <div class="habitaciones">
                 <div>
                     <p>Habitaciones</p>
                 </div>
+
+                <!-- Tipo de habitación -->
                 <div>
                     <select name="" id="">
                         <option value="">Simple</option>
@@ -95,30 +125,41 @@
                     </select>
                 </div>
             </div>
-            <div class="buscar">
+
+            <!-- Botón de búsqueda -->
+            <div class="buscar-lugar">
                 <label for="">Lugar:</label>
                 <input type="text" placeholder="Ej: Granada">
             </div>
+
             <div class="boton-buscar">
                 <a href="busqueda.html"><button class="boton">Buscar</button></a>
             </div>
         </section>
-        
+        <!-- Fin de la sección búsqueda -->
 
-            <section class="conocenos">
-                <div class="conocenos-text">
-                    <h2>Descubre tu lugar perfecto</h2>
-                    <p>En PL Villas, nos esforzamos por ofrecer experiencias únicas a nuestros clientes, asegurando que cada villa sea más que un simple alojamiento. Nuestro equipo de expertos ofrece un servicio personalizado para satisfacer las necesidades y expectativas de cada cliente, asegurando una experiencia sin igual.</p>
-                </div>
-                <div class="conocenos-img">
-                    <img src="./assets/img/ciudades/losangeles.jpg" alt="Villa de lujo">
-                </div>
-            </section>
+        <!-- Sección de introducción conocenos -->
+        <section class="conocenos">
 
-          <section class="testimonios">
+            <div class="conocenos-text">
+                <h2>Descubre tu lugar perfecto</h2>
+                <p>En PL Villas, nos esforzamos por ofrecer experiencias únicas a nuestros clientes, asegurando que cada villa sea más que un simple alojamiento. Nuestro equipo de expertos ofrece un servicio personalizado para satisfacer las necesidades y expectativas de cada cliente, asegurando una experiencia sin igual.</p>
+            </div>
+
+            <div class="conocenos-img">
+                <img src="./assets/img/ciudades/losangeles.jpg" alt="Villa de lujo">
+            </div>
+            
+        </section>
+        <!-- Fin de la sección de introducción conocenos -->
+
+        <!-- Sección de los testimonios de los clientes -->
+        <section class="testimonios">
             <h2>Testimonios</h2>
             <div class="slider">
                 <div class="slide-row" id="slide-row">
+
+                    <!-- Cliente 1 -->
                     <div class="slide-col">
                         <div class="testimonial">
                             <div class="content">
@@ -138,7 +179,8 @@
                             </div>
                         </div>
                     </div>
-        
+
+                    <!-- Cliente 2 -->
                     <div class="slide-col">
                         <div class="testimonial">
                             <div class="content">
@@ -159,6 +201,7 @@
                         </div>
                     </div>
         
+                    <!-- Cliente 3 -->
                     <div class="slide-col">
                         <div class="testimonial">
                             <div class="content">
@@ -179,9 +222,9 @@
                         </div>
                     </div>
                   
+                    <!-- Cliente 4 -->
                     <div class="slide-col">
                         <div class="testimonial">
-    
                             <div class="content">
                                 <p>Nuestra estadía en la villa fue absolutamente maravillosa. Cada detalle fue atendido, y la experiencia general fue relajante y rejuvenecedora.</p>
                                 <h2>Sarah</h2>
@@ -199,163 +242,197 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             
+            <!-- Botones de navegación del slider-->
             <div class="indicator">
                 <i id="prev-btn" class="ri-arrow-left-circle-fill"></i>
                 <i id="next-btn" class="ri-arrow-right-circle-fill"></i>
                 
             </div>
-        </section>
 
-        <section class="opiniones">
+        </section>
+        <!-- Fin de la sección de los testimonios de los clientes -->
+
+        <!-- Sección de somos profesionales -->
+        <section class="profesionales-container">
+
             <h2>Somos Profesionales</h2>
-            <div class="opiniones-section">
-                <div class="opiniones-grid">
-                    <div class="opinion-card">
-                        <div class="opinion-card__front">
+            <div class="profesionales-container-section">
+                <div class="profesionales-container-grid">
+
+                    <!-- Card 1 -->
+                    <div class="profesionalonal-card">
+                        <div class="profesionalonal-card__front">
                             <p>Encontramos las mejores propiedades</p>
-                            <img src="./assets/img/casas/hero.jpg" alt="Opinión 1">
+                            <img src="./assets/img/casas/hero.jpg" alt="Imagen casa 1">
                         </div>
-                        <div class="opinion-card__back">
+                        <div class="profesionalonal-card__back">
                             <p>Somos pioneros en encontrar las mejores propiedades del mercado para ofrecer a nuestros clientes alrededor del mundo.</p>
                         </div>
                     </div>
-                    <div class="opinion-card">
-                        <div class="opinion-card__front">
+
+                    <!-- Card 2 -->
+                    <div class="profesionalonal-card">
+                        <div class="profesionalonal-card__front">
                             <p>Ofrecemos experiencias únicas</p>
-                            <img src="./assets/img/casas/aventura.jpg" alt="Opinión 2">
+                            <img src="./assets/img/casas/aventura.jpg" alt="Imagen casa 2">
                         </div>
-                        <div class="opinion-card__back">
+                        <div class="profesionalonal-card__back">
                             <p>En Luxury Villas, nos esforzamos por ofrecer experiencias únicas a nuestros clientes, asegurando que cada villa sea más que un simple alojamiento.</p>
                         </div>
                     </div>
-                    <div class="opinion-card">
-                        <div class="opinion-card__front">
+
+                    <!-- Card 3 -->
+                    <div class="profesionalonal-card">
+                        <div class="profesionalonal-card__front">
                             <p>Servicio personalizado</p>
-                            <img src="./assets/img/slider/villa2salon.webp" alt="Opinión 3">
+                            <img src="./assets/img/slider/villa2salon.webp" alt="Imagen casa 3">
                         </div>
-                        <div class="opinion-card__back">
+                        <div class="profesionalonal-card__back">
                             <p>Nuestro equipo de expertos ofrece un servicio personalizado para satisfacer las necesidades y expectativas de cada cliente, asegurando una experiencia sin igual.</p>
                         </div>
                     </div>
-                    <div class="opinion-card">
-                        <div class="opinion-card__front">
+
+                    <!-- Card 4 -->
+                    <div class="profesionalonal-card">
+                        <div class="profesionalonal-card__front">
                             <p>Calidad y excelencia</p>
-                            <img src="./assets/img/casas/aventura2.jpg" alt="Opinión 4">
+                            <img src="./assets/img/casas/aventura2.jpg" alt="Imagen casa 4">
                         </div>
-                        <div class="opinion-card__back">
+                        <div class="profesionalonal-card__back">
                             <p>En Luxury Villas, nos comprometemos a ofrecer la más alta calidad y excelencia en cada detalle, desde la selección de las propiedades hasta la atención al cliente.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        
+        <!-- Fin de la sección somos profesionales  -->
 
-
+        <!-- Sección de la galería de imágenes -->
         <section class="gallery">
+            <!-- Item 1 -->
             <figure class="gallery__item gallery__item--1">
                 <img src="./assets/img/galeria/gal-1.jpeg" alt="Gallery image 1" class="gallery__img" />
             </figure>
 
+            <!-- Item 2 -->
             <figure class="gallery__item gallery__item--2">
                 <img src="./assets/img/galeria/gal-2.jpeg" alt="Gallery image 2" class="gallery__img" />
             </figure>
 
+            <!-- Item 3 -->
             <figure class="gallery__item gallery__item--3">
                 <img src="./assets/img/galeria/gal-3.jpeg" alt="Gallery image 3" class="gallery__img" />
             </figure>
 
+            <!-- Item 4 -->
             <figure class="gallery__item gallery__item--4">
                 <img src="./assets/img/galeria/gal-4.jpeg" alt="Gallery image 4" class="gallery__img" />
             </figure>
 
+            <!-- Item 5 -->
             <figure class="gallery__item gallery__item--5">
                 <img src="./assets/img/galeria/gal-5.jpeg" alt="Gallery image 5" class="gallery__img" />
             </figure>
 
+            <!-- Item 6 -->
             <figure class="gallery__item gallery__item--6">
                 <img src="./assets/img/galeria/gal-6.jpeg" alt="Gallery image 6" class="gallery__img" />
             </figure>
 
+            <!-- Item 7 -->
             <figure class="gallery__item gallery__item--7">
                 <img src="./assets/img/galeria/gal-7.jpeg" alt="Gallery image 7" class="gallery__img" />
             </figure>
 
+            <!-- Item 8 -->
             <figure class="gallery__item gallery__item--8">
                 <img src="./assets/img/galeria/gal-8.jpeg" alt="Gallery image 8" class="gallery__img" />
             </figure>
 
+            <!-- Item 9 -->
             <figure class="gallery__item gallery__item--9">
                 <img src="./assets/img/galeria/gal-9.jpeg" alt="Gallery image 9" class="gallery__img" />
             </figure>
 
+            <!-- Item 10 -->
             <figure class="gallery__item gallery__item--10">
                 <img src="./assets/img/galeria/gal-10.jpeg" alt="Gallery image 10" class="gallery__img" />
             </figure>
 
+            <!-- Item 11 -->
             <figure class="gallery__item gallery__item--11">
                 <img src="./assets/img/galeria/gal-11.jpeg" alt="Gallery image 11" class="gallery__img" />
             </figure>
 
+            <!-- Item 12 -->
             <figure class="gallery__item gallery__item--12">
                 <img src="./assets/img/galeria/gal-12.jpeg" alt="Gallery image 12" class="gallery__img" />
             </figure>
             
         </section>
-        
+        <!-- Fin de la sección de la galería de imágenes -->
 
-              
-    <section class="section-tipos">
-      <h2>Lugares de Interés</h2>
-      <p>Conoce los lugares más bonitos desde las mejores Villas</p>
-        <div class="galeria-tipos">
-            <div class="card-tipos">
-                <div>
-                    <h3>Madrid</h3>
-                </div>
-                <div>
-                    <a href="busqueda.html"><img src="./assets/img/ciudades/madrid.webp" alt=""></a>
-                </div>
-            </div>
-            <div class="card-tipos">
-                <div>
-                    <h3>Londres</h3>
-                </div>
-                <div>
-                    <a href="busqueda.html"><img src="./assets/img/ciudades/londres.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="card-tipos">
-                <div>
-                    <h3>Los Ángeles</h3>
-                </div>
-                <div>
-                    <a href="busqueda.html"><img src="./assets/img/ciudades/losangeles.jpg" alt=""></a>
-                </div>
-                <div class="blob"></div>
+              <!-- Sección de los lugares de alojamiento -->
+        <section class="section-lugares">
+            <!-- Título -->
+            <h2>Lugares de Interés</h2>
+            <p>Conoce los lugares más bonitos desde las mejores Villas</p>
+            <!-- Galería de lugares -->
+            <div class="galeria-lugares">
 
-            </div>
-            <div class="card-tipos">
-                <div>
-                    <h3>Dubai</h3>
+                <!-- Card 1 -->
+                <div class="card-lugares">
+                    <div>
+                        <h3>Madrid</h3>
+                    </div>
+                    <div>
+                        <a href="busqueda.html"><img src="./assets/img/ciudades/madrid.webp" alt=""></a>
+                    </div>
                 </div>
-                <div>
-                    <a href="busqueda.html"><img src="./assets/img/ciudades/dubai.webp" alt=""></a>
+
+                <!-- Card 2 -->
+                <div class="card-lugares">
+                    <div>
+                        <h3>Londres</h3>
+                    </div>
+                    <div>
+                        <a href="busqueda.html"><img src="./assets/img/ciudades/londres.jpg" alt=""></a>
+                    </div>
                 </div>
-                <div class="bg"></div>
 
-                <div class="blob"></div>
+                <!-- Card 3 -->
+                <div class="card-lugares">
+                    <div>
+                        <h3>Los Ángeles</h3>
+                    </div>
+                    <div>
+                        <a href="busqueda.html"><img src="./assets/img/ciudades/losangeles.jpg" alt=""></a>
+                    </div>
+                </div>
 
-            </div>
-        </div>    
-    </section>
+                <!-- Card 4 -->
+                <div class="card-lugares">
+                    <div>
+                        <h3>Dubai</h3>
+                    </div>
+                    <div>
+                        <a href="busqueda.html"><img src="./assets/img/ciudades/dubai.webp" alt=""></a>
+                    </div>
+                </div>
 
-   
+            </div>    
+        </section>
+        <!-- Fin de la sección de los mejores lugares -->
+
     </main>
+    <!-- Fin del contenido principal -->
 
+    <!-- Inicio del footer -->
     <footer>
         <div class="footer-container">  
             <div class="ayuda footer-info">
@@ -414,7 +491,9 @@
 
         </div>
     </footer>
+    <!-- Fin del footer -->
 
+    <!-- Inicio de los scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 

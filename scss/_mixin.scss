@@ -67,13 +67,13 @@
 }
   
 /// Mixin para definir el efecto de volteo al hacer hover en las tarjetas de opinión
-@mixin opinion-card-hover-effect {
+@mixin profesionalonal-card-hover-effect {
     &:hover {
-        .opinion-card__front {
+        .profesionalonal-card__front {
           transform: rotateY(-180deg);
         }
   
-        .opinion-card__back {
+        .profesionalonal-card__back {
           transform: rotateY(0deg);
         }
     }

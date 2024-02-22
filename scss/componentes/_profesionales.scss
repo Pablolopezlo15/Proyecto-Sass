@@ -1,10 +1,10 @@
-/// Contenedor principal para las opiniones
-.opiniones{
+/// Contenedor principal para las profesionales-container
+.profesionales-container{
     @include flex-center(column, 2rem);
 }
 
-/// Sección individual de opiniones
-.opiniones-section{
+/// Sección individual de profesionales-container
+.profesionales-container-section{
     @include flex-center;
     width: 100%;
     margin-bottom: 2rem;
@@ -13,8 +13,8 @@
     #{$bg}: color('gris');
 }
 
-/// Grid para las opiniones
-.opiniones-grid{
+/// Grid para las profesionales-container
+.profesionales-container-grid{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -24,20 +24,20 @@
     align-items: center;
 }
 
-/// Tarjeta individual de opiniones
-.opinion-card{
+/// Tarjeta individual de profesionales-container
+.profesionalonal-card{
     width: 100%;
     height: 400px;
     perspective: 1000px;
     position: relative;
     cursor: pointer;
 
-    /// Frente de la tarjeta de opiniones
+    /// Frente de la tarjeta de profesionales-container
     &__front {
         @include card-properties(#f1f1f1);
         @include flex-center(row, 5rem);
     
-        /// Imagen en el frente de la tarjeta de opiniones
+        /// Imagen en el frente de la tarjeta de profesionales-container
         img { 
             max-width: 100%;
             max-height: 100%;
@@ -45,7 +45,7 @@
         }
     }
     
-    /// Parte trasera de la tarjeta de opiniones
+    /// Parte trasera de la tarjeta de profesionales-container
     &__back {
         @include card-properties(#fff);
         padding: 20px;
@@ -54,12 +54,12 @@
         transform: rotateY(180deg);
     }
 
-    /// Efecto de hover para la tarjeta de opiniones
-    @include opinion-card-hover-effect;
+    /// Efecto de hover para la tarjeta de profesionales-container
+    @include profesionalonal-card-hover-effect;
 }
 
-/// Frente de la tarjeta de opiniones con estilos adicionales
-.opinion-card__front{
+/// Frente de la tarjeta de profesionales-container con estilos adicionales
+.profesionalonal-card__front{
     @include flex-center(column, 1rem);
     padding: 1rem;
     border: 1px solid #e1e1e1;
