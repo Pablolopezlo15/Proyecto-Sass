@@ -106,7 +106,7 @@ header {
       header nav a.navbar-brand img {
         width: 64px; }
     header nav a.nav-link {
-      color: #c05000;
+      color: #ffffff;
       font-size: 1.3rem;
       padding: 0; }
       header nav a.nav-link:hover {
@@ -132,6 +132,17 @@ header {
   background-color: #000000cb;
   border-bottom: 2px solid #c05000;
   height: 12vh; }
+  .bg-scroll a.nav-link {
+    color: #c05000;
+    font-size: 1.3rem;
+    padding: 0; }
+    .bg-scroll a.nav-link:hover {
+      transition: all 0.5s ease-in-out;
+      color: #ffffff;
+      border-bottom: #ffffff 2px solid;
+      border-top: #ffffff 2px solid;
+      animation: menosmas 0.5s ease-in-out;
+      cursor: pointer; }
 
 .header-detalle {
   background-color: #000000cb;
@@ -152,7 +163,7 @@ header {
   border-top: 2px solid #c05000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .buscar div {
-    width: 200px;
+    width: 150px;
     text-align: center; }
   .buscar p {
     margin: 0; }
@@ -208,7 +219,7 @@ header {
   .publi .publi-img {
     width: 100%;
     height: 80vh;
-    background-image: url("../assets/img/casas/hero.jpg");
+    background-image: url("../assets/img/casas/header.jpg");
     background-size: cover;
     background-position: center; }
 

@@ -14,7 +14,7 @@ header {
         }
 
         a.nav-link {
-            color: color('naranja');
+            color: color('blanco');
             font-size: font-size('sm');
             padding: 0;
 
@@ -51,6 +51,17 @@ header {
     background-color: color('menu');
     border-bottom: 2px solid color('naranja');
     height: 12vh;
+
+    a.nav-link {
+        color: color('naranja');
+        font-size: font-size('sm');
+        padding: 0;
+
+        &:hover {
+            @include hover-animation;
+        }
+    }
+
 }
 
 
