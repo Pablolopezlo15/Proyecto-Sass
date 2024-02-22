@@ -53,11 +53,10 @@
             @include flex-center(row, 2rem);
             flex-wrap: wrap;
             width: 45%;
-            min-width: 300px;
+            min-width: 125px;
         }
         &__img {
             width: 100%;
-            min-width: 300px;
             object-fit: cover;
         }
     }

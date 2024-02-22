@@ -354,10 +354,9 @@ header {
         gap: 2rem;
         flex-wrap: wrap;
         width: 45%;
-        min-width: 300px; }
+        min-width: 125px; }
       .gallery__img {
         width: 100%;
-        min-width: 300px;
         object-fit: cover; } }
 
 .opiniones {
